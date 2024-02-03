@@ -45,6 +45,7 @@ alias gswitchc="git switch -c"
 alias gbranch="git branch"
 # Other
 alias unimatrix="unimatrix -s 95"
+alias emacs="emacsclient -c -a 'emacs'"
 
 ### COLORIZE OUTPUTS ###
 alias grep="grep --color=auto"
