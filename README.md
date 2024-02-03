@@ -41,8 +41,8 @@ Now use GNU Stow to create symbolik links
 stow .
 ```
 
-Alternatively you can run
 `WARNNING: This will delete your existing dotfiles`
+Alternatively you can run this:
 ```bash
 stow --adopt .
 ```
