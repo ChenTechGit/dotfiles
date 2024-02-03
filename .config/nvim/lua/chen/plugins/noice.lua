@@ -1,6 +1,9 @@
 return {
   "folke/noice.nvim",
-  keys = ":",
+  keys = {
+    ":",
+    "/"
+  },
   dependencies = {
     "MunifTanjim/nui.nvim",
     "rcarriga/nvim-notify"
