@@ -1,0 +1,65 @@
+#
+# /--------\  Kevinyyca (Chen Tt)
+# |  /---  |  Youtube: https://www.youtube.com/channel/UCpei9H0N35jQ8_TFSEGzBDA
+# |  |     |  Github: https://github.com/kevinyyca
+# |  \---  |
+# \________/
+
+### PLUGINS ###
+ZSH=~/.zsh
+source $ZSH/plugins/sudo/sudo.plugin.zsh                                    # Load sudo plugin
+source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh     # Load syntax highlighting plugin
+source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh             # Load zsh-autosuggestions plugin
+
+### EXPORT ###
+export TERM="xterm-256color"        # Getting proper colors
+export EDITOR="nvim"                # Use Neovim as text editor in terminal
+export VISUAL="nvim"                # Use Neovim as text editor in GUI
+
+### PATH ###
+if [ -d "$HOME/.bin" ]; then
+  PATH="$HOME/.bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ]; then
+  PATH="$HOME/.local/bin:$PATH"
+fi
+
+### AUTOJUMP ###
+if [ -f "/usr/share/autojump/autojump.sh" ]; then
+	. /usr/share/autojump/autojump.sh
+elif [ -f "/usr/share/autojump/autojump.bash" ]; then
+	. /usr/share/autojump/autojump.bash
+else
+	echo "can't found the autojump script"
+fi
+
+### ALIASES ###
+alias refresh="clear; source ~/.zshrc"
+# Ls
+alias ls="ls --color=auto"
+alias ll="ls -lh"
+alias lla="ls -lha"
+alias tree="exa --tree"
+# Git
+alias gstat="git status"
+alias gadd="git add"
+alias gcommit="git commit"
+alias gcam="git commit -a -m"
+alias gswitch="git switch"
+alias gswitchc="git switch -c"
+alias gbranch="git branch"
+# Other
+alias unimatrix="unimatrix -s 95"
+
+### COLORIZE OUTPUTS ###
+alias grep="grep --color=auto"
+alias egrep="egrep --color=auto"
+alias fgrep"fgrep --color=auto"
+alias cat='batcat -p'
+
+### STARSHIP ###
+eval "$(starship init zsh)"
+
+### START UP COMMANDS ###
+neofetch | lolcat
