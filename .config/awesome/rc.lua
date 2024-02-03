@@ -190,6 +190,14 @@ end
 screen.connect_signal("property::geometry", set_wallpaper)
 
 awful.screen.connect_for_each_screen(function(s)
+    -- Useless gaps
+    s.padding = {
+      top = 15,
+      bottom = 15,
+      left = 15,
+      right = 15
+    }
+
     -- Wallpaper
     set_wallpaper(s)
 
