@@ -1,8 +1,8 @@
-<h1 align="center">My dotfiles</h1>
+<h1 align="center">📄 My dotfiles</h1>
 
 This repository contains the dotfiles in my system
 
-# Requirements
+# 📦 Requirements
 
 Check if you have the following packages installed on your system
 
