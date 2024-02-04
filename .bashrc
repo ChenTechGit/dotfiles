@@ -55,7 +55,7 @@ alias emacs="emacsclient -c -a 'emacs'"
 ### COLORIZE OUTPUTS ###
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
-alias fgrep"fgrep --color=auto"
+alias fgrep="fgrep --color=auto"
 alias cat='batcat -p'
 
 ### STARSHIP ###
