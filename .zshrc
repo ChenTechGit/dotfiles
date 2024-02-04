@@ -53,7 +53,7 @@ alias gmerge="git merge"
 alias grestore="git restore"
 alias gpush="git push"
 alias gpushu="git push -u"
-alias gpushall="git push -u --all"
+alias gpushall="git push -u --all --tags"
 # Other
 alias unimatrix="unimatrix -s 95"
 alias emacs="emacsclient -c -a 'emacs'"
