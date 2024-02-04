@@ -1,16 +1,12 @@
 return {
   "folke/noice.nvim",
-  keys = {
-    ":",
-    "/"
-  },
+  event = "VeryLazy",
   dependencies = {
     "MunifTanjim/nui.nvim",
     "rcarriga/nvim-notify"
   },
   config = function()
     local noice = require("noice")
-    vim.cmd([[Lazy load nvim-lspconfig]])
 
     noice.setup() -- Configure Noice
 
