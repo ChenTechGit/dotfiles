@@ -58,6 +58,9 @@ end
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/mytheme/theme.lua")
 beautiful.useless_gap = 15 -- Set useless gaps
+-- Borders
+beautiful.border_width = 1
+beautiful.border_focus = "#007AFF"
 
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
