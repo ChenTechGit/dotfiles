@@ -57,6 +57,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/mytheme/theme.lua")
+beautiful.useless_gap = 15
 
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
