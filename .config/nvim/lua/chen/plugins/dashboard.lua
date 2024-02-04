@@ -23,11 +23,11 @@ return {
           [[                                                       ]]
         },
         center = {
-          -- Recently opened files
+          -- Recent files
           {
             icon = " ",
-            desc = "Recently opened files",
-            key = "a",
+            desc = "Recent files",
+            key = "r",
             key_format = " [%s]",
             action = function()
               vim.cmd([[Lazy load telescope.nvim]]) -- Load Telescope
@@ -38,28 +38,38 @@ return {
           {
             icon = " ",
             desc = "Find file",
-            key = "b",
+            key = "f",
             key_format = " [%s]",
             action = function()
               vim.cmd([[Lazy load telescope.nvim]]) -- Load Telescope
               vim.cmd([[Telescope find_files]])
             end
           },
-          -- File browser
+          -- Find text
           {
-            icon = " ",
-            desc = "File browser",
-            key = "d",
+            icon = " ",
+            desc = "Find text",
+            key = "g",
+            key_format = " [%s]",
+            action = function()
+              vim.cmd([[Lazy load telescope.nvim]]) -- Load Telescope
+              vim.cmd([[Telescope live_grep]])
+            end
+          },
+          {
+            icon = " ",
+            desc = "New file",
+            key = "n",
+            key_format = " [%s]",
+            action = "ene | startinsert"
+          },
+          -- File tree
+          {
+            icon = " ",
+            desc = "File tree",
+            key = "t",
             key_format = " [%s]",
             action = "NvimTreeToggle"
-          },
-          -- Open new file
-          {
-            icon = " ",
-            desc = "Open new file",
-            key = "e",
-            key_format = " [%s]",
-            action = newfile
           },
           -- Change colorscheme
           {
@@ -74,11 +84,19 @@ return {
           },
           -- Lazy UI
           {
-            icon = " ",
-            desc = "Open Lazy UI",
-            key = "g",
+            icon = "󰒲 ",
+            desc = "Lazy UI",
+            key = "l",
             key_format = " [%s]",
             action = "Lazy"
+          },
+          -- Quit
+          {
+            icon = " ",
+            desc = "Quit",
+            key = "q",
+            key_format = " [%s]",
+            action = "qa"
           }
         }
       }
