@@ -59,8 +59,9 @@ end
 beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/mytheme/theme.lua")
 beautiful.useless_gap = 15 -- Set useless gaps
 -- Borders
-beautiful.border_width = 1
+beautiful.border_width = 1.3
 beautiful.border_focus = "#007AFF"
+beautiful.border_normal = "#0554AA"
 
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
@@ -353,10 +354,7 @@ globalkeys = gears.table.join(
                     history_path = awful.util.get_cache_dir() .. "/history_eval"
                   }
               end,
-              {description = "lua execute prompt", group = "awesome"}),
-    -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+              {description = "lua execute prompt", group = "awesome"})
 )
 
 clientkeys = gears.table.join(
@@ -488,8 +486,18 @@ lampkeys = gears.table.join(
     { description = "toggle lamp", group = "lamp" })
 )
 
+-- Screenshot
+screenshotkeys = gears.table.join(
+  awful.key({}, "Print",
+    function() awful.spawn.with_shell("flameshot screen -n 0", false) end,
+    { description = "take a screenshot of current monitor", group = "screenshot" }),
+  awful.key({ modkey, "Mod1" }, "p",
+    function() awful.spawn.with_shell("flameshot gui", false) end,
+    { description = "take a screenshot of current monitor", group = "screenshot" })
+)
+
 -- Set keys
-root.keys(awful.util.table.join(globalkeys, audiokeys, lampkeys))
+root.keys(awful.util.table.join(globalkeys, audiokeys, lampkeys, screenshotkeys))
 -- }}}
 
 -- {{{ Rules
