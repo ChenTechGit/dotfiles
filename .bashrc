@@ -7,6 +7,7 @@
 
 ### EXPORT ###
 export TERM="xterm-256color"        # Getting proper colors
+export HISTSIZE=10000               # Use a history size of 1000
 export EDITOR="nvim"                # Use Neovim as text editor in terminal
 export VISUAL="nvim"                # Use Neovim as text editor in GUI
 
