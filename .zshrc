@@ -17,10 +17,10 @@ export EDITOR="nvim"                # Use Neovim as text editor in terminal
 export VISUAL="nvim"                # Use Neovim as text editor in GUI
 
 ### HISTORY ###
-export HISTFILE=~/.zsh_history        # Store history in $HOME/.zsh_history
-export HISTSIZE=10000               # Use a history size of 1000
-export SAVEHIST=10000               # Use a history size of 1000
-setopt appendhistory                # Enable history
+export HISTFILE="$HOME/.zsh_history"        # Store history in $HOME/.zsh_history
+export HISTSIZE=10000                       # Use a history size of 1000
+export SAVEHIST=10000                       # Use a history size of 1000
+setopt appendhistory                        # Enable history
 
 ### PATH ###
 if [ -d "$HOME/.bin" ]; then
