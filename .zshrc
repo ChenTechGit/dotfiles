@@ -47,6 +47,10 @@ alias ls="ls --color=auto"
 alias ll="ls -lh"
 alias lla="ls -lha"
 alias tree="exa --tree"
+# Neovim
+alias vi="nvim"
+alias vim="nvim"
+alias nvm="nvim"
 # Git
 alias gstat="git status"
 alias gadd="git add"

@@ -30,12 +30,16 @@ else
 fi
 
 ### ALIASES ###
-alias refresh='clear; source ~/.bashrc'
+alias refresh="clear; source ~/.zshrc"
 # Ls
 alias ls="ls --color=auto"
-alias ll='ls -lh'
-alias lla='ls -lha'
-alias tree='exa --tree'
+alias ll="ls -lh"
+alias lla="ls -lha"
+alias tree="exa --tree"
+# Neovim
+alias vi="nvim"
+alias vim="nvim"
+alias nvm="nvim"
 # Git
 alias gstat="git status"
 alias gadd="git add"
@@ -53,7 +57,6 @@ alias gpushtags="git push -u --tags"
 # Other
 alias unimatrix="unimatrix -s 95"
 alias emacs="emacsclient -c -a 'emacs'"
-
 ### COLORIZE OUTPUTS ###
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
