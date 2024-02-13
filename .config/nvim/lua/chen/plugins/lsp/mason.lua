@@ -34,6 +34,6 @@ return {
     -- Keymaps
     local Keymap = vim.keymap
 
-    Keymap.set("n", "<leader>um", ":Mason<CR>", { desc = "Open Mason UI" })
+    Keymap.set("n", "<leader>um", "<cmd>Mason<CR>", { desc = "Open Mason UI" })
   end,
 }

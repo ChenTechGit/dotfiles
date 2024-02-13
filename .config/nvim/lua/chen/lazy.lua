@@ -30,4 +30,4 @@ require("lazy").setup({
 -- Keymaps
 local keymap = vim.keymap
 
-keymap.set("n", "<leader>ul", ":Lazy<CR>", { desc = "Open Lazy UI" }) -- Open Lazy UI
+keymap.set("n", "<leader>ul", "<cmd>Lazy<CR>", { desc = "Open Lazy UI" }) -- Open Lazy UI
