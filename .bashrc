@@ -29,6 +29,7 @@ else
 	echo "can't found the autojump script"
 fi
 
+
 ### ALIASES ###
 alias refresh="clear; source ~/.zshrc"
 # Ls
@@ -45,6 +46,9 @@ alias gstat="git status"
 alias gadd="git add"
 alias gcommit="git commit"
 alias gcam="git commit -a -m"
+alias glog="git log"
+alias grebase="git rebase"
+alias grebasei="git rebase -i --root"
 alias gclone="git clone"
 alias gswitch="git switch"
 alias gswitchc="git switch -c"
@@ -58,10 +62,11 @@ alias gpushtags="git push -u --tags"
 # Other
 alias unimatrix="unimatrix -s 95"
 alias emacs="emacsclient -c -a 'emacs'"
+
 ### COLORIZE OUTPUTS ###
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
-alias fgrep="fgrep --color=auto"
+alias fgrep"fgrep --color=auto"
 alias cat='batcat -p'
 alias lcat="lolcat"
 
