@@ -72,7 +72,7 @@ alias lcat="lolcat"
 
 ### EVAL ###
 eval "$(starship init bash)"
-eval "$(zoxide init bash)"
+eval "$(zoxide init --cmd cd bash)"
 
 ### START UP COMMANDS ###
 neofetch | lolcat
