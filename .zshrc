@@ -80,8 +80,9 @@ alias fgrep"fgrep --color=auto"
 alias cat='batcat -p'
 alias lcat="lolcat"
 
-### STARSHIP ###
+### EVAL ###
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 ### START UP COMMANDS ###
 neofetch | lolcat
