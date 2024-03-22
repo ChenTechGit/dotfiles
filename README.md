@@ -12,7 +12,7 @@ Debian and Ubuntu
 sudo apt install git
 ```
 
-Arach based
+Arch based
 ```bash
 sudo pacman -S git
 ```
@@ -23,7 +23,7 @@ Debian and Ubuntu
 sudo apt install stow
 ```
 
-Arach based
+Arch based
 ```bash
 sudo pacman -S stow
 ```
