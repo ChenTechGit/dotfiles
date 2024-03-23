@@ -9,3 +9,9 @@ configuration {
 }
 
 @theme "/dev/null"
+
+* {
+  bg: #1a1b26;
+
+  background-color: @bg;
+}
