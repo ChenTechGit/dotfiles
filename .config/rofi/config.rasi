@@ -15,3 +15,7 @@ configuration {
 
   background-color: @bg;
 }
+
+window {
+  width: 45%;
+}
