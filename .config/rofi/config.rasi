@@ -8,6 +8,8 @@ configuration {
   icon-theme: "Papirus";
 }
 
+@theme "/dev/null"
+
 * {
     foreground:  #ffeedd;
     backlight:   #ccffeedd;
