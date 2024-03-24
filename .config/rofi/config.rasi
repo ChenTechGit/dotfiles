@@ -12,10 +12,38 @@ configuration {
 
 * {
   bg: #1a1b26;
+  fg: #c0caf5;
+
+  selected-bg: #283457;
 
   background-color: @bg;
 }
 
 window {
   width: 45%;
+}
+
+element {
+  background-color: @bg;
+  color: @fg;
+  padding: 3px;
+  border-radius: 4px;
+  font: inherit;
+}
+
+element-text {
+  background-color: inherit;
+  text-color: inherit;
+}
+
+element selected {
+  background-color: @selected-bg;
+}
+
+element-icon {
+  size: 28;
+}
+
+element-icon selected {
+  background-color: @selected-bg;
 }
