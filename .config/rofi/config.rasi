@@ -15,6 +15,7 @@ configuration {
   fg: #c0caf5;
 
   selected-bg: #283457;
+  inactive-fg: #545c7e;
 
   background-color: @bg;
 }
@@ -25,7 +26,7 @@ window {
 
 element {
   background-color: @bg;
-  color: @fg;
+  color: @inactive-fg;
   padding: 3px;
   border-radius: 4px;
   font: inherit;
@@ -38,6 +39,7 @@ element-text {
 
 element selected {
   background-color: @selected-bg;
+  color: @fg;
 }
 
 element-icon {
@@ -46,4 +48,32 @@ element-icon {
 
 element-icon selected {
   background-color: @selected-bg;
+}
+
+mainbox {
+  children: [inputbar, listview];
+  background-color: @bg;
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+prompt {
+  background-color: @bg;
+  enabled: true;
+  padding: 8 0 0 8;
+  text-color: @fg;
+}
+
+entry {
+  background-color: @bg;
+  padding: 8;
+  text-color: @fg;
+}
+
+listview {
+  background-color: @bg;
+  columns: 1;
+  lines: 10;
 }
