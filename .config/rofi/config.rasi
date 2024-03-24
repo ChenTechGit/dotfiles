@@ -28,7 +28,7 @@ element {
   background-color: @bg;
   color: @inactive-fg;
   padding: 3px;
-  border-radius: 4px;
+  border-radius: 8px;
   font: inherit;
 }
 
