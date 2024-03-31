@@ -82,6 +82,7 @@ alias lcat="lolcat"
 
 ### EVAL ###
 eval "$(starship init zsh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init --cmd cd zsh)"
 
 ### START UP COMMANDS ###
