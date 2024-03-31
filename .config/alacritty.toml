@@ -39,3 +39,5 @@ color = '#ff9e64'
 index = 17
 color = '#db4b4b'
 
+[window]
+opacity = 0.8
