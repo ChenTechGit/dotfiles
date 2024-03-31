@@ -39,5 +39,10 @@ color = '#ff9e64'
 index = 17
 color = '#db4b4b'
 
+# Background opacity
 [window]
 opacity = 0.8
+
+# Font
+[font]
+normal = { family = "MesloLGS Nerd Font" }
