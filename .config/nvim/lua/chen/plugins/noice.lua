@@ -7,8 +7,15 @@ return {
   },
   config = function()
     local noice = require("noice")
+    local notify = require("notify")
 
     noice.setup() -- Configure Noice
+
+    notify.setup({
+      on_open = function()
+        vim.cmd([[ :nohlsearch ]])
+      end,
+    })
 
     -- Keymaps
     local keymap = vim.keymap
