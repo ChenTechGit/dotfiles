@@ -1,9 +1,9 @@
 #!/bin/bash
 
-chosen=$(printf "Shutdown\n Reboot\nSleep\nLock" | rofi -dmenu -i -theme $HOME/.config/rofi/config.rasi)
+chosen=$(printf "Shutdown\nReboot\nSleep\nLock" | rofi -dmenu -p "" -i -theme $HOME/.config/rofi/powermenu.rasi)
 
 case "$chosen" in
-  "Shutdown") shutdown ;;
+  "Shutdown") shutdown now ;;
   "Reboot") reboot ;;
   "Sleep") systemctl suspend ;;
   "Lock") slock ;;
