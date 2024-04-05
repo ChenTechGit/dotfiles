@@ -14,7 +14,7 @@ configuration {
   bg: #1a1b26;
   fg: #c0caf5;
 
-  selected-bg: #283457;
+  selected-bg: #4983FF;
   inactive-fg: #545c7e;
 
   background-color: @bg;
@@ -24,11 +24,26 @@ window {
   width: 45%;
 }
 
+listview {
+  scrollbar: true;
+}
+
+scrollbar {
+  width: 4;
+  border: 1;
+  border-color: #222433;
+  border-radius: 5px;
+  padding: 0;
+  handle-width: 8;
+  handle-color: @selected-bg;
+  background-color: #222433;
+}
+
 element {
   background-color: @bg;
   color: @inactive-fg;
-  padding: 3px;
-  border-radius: 8px;
+  padding: 4px;
+  border-radius: 11.5px;
   font: inherit;
 }
 
@@ -75,5 +90,5 @@ entry {
 listview {
   background-color: @bg;
   columns: 1;
-  lines: 10;
+  lines: 11;
 }
