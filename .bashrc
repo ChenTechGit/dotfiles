@@ -76,4 +76,4 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init --cmd cd bash)"
 
 ### START UP COMMANDS ###
-neofetch | lolcat
+fastfetch
