@@ -1,0 +1,10 @@
+# Required packages fonts and themes
+1. `Fastfetch` (A replacment for Neofetch)
+2. `MesloLGS` font (For the terminal emulator)
+3. `Orchis theme` (For Flatpak applications)
+4. `Emacs` (Server autostarts when WM loads config)
+5. `Flameshot` (Server autostarts when WM loads config)
+6. `Batcat` (Better cat command)
+7. `Unimatrix` (Better Cmatrix)
+8. `Starship` (Prompt customization)
+9. `zoxide` (Better Cd)
