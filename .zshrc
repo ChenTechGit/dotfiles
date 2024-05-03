@@ -77,7 +77,7 @@ alias emacs="emacsclient -c -a 'emacs'"
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias fgrep"fgrep --color=auto"
-alias cat='batcat -p'
+alias cat='bat -p'
 alias lcat="lolcat"
 
 ### EVAL ###
@@ -100,6 +100,9 @@ _fzf_compgen_dir() {
 }
 
 source ~/fzf-git.sh/fzf-git.sh
+
+### Bat (Better cat) ###
+export BAT_THEME=tokyonight_night
 
 ### START UP COMMANDS ###
 fastfetch
