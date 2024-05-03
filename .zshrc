@@ -43,10 +43,11 @@ fi
 ### ALIASES ###
 alias refresh="clear; source ~/.zshrc"
 # Ls
-alias ls="ls --color=auto"
-alias ll="ls -lh"
-alias lla="ls -lha"
-alias tree="exa --tree"
+alias eza="eza --color=always --git --icons=always"
+alias ls="eza"
+alias ll="eza -lh"
+alias lla="eza -lha"
+alias tree="eza --tree"
 # Neovim
 alias vi="nvim"
 alias vim="nvim"
@@ -97,6 +98,23 @@ _fzf_compgen_path() {
 
 _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
+}
+
+show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
+
+export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
+export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
+
+_fzf_comprun() {
+  local command=$1
+  shift
+
+  case "$command" in
+    cd)           fzf --preview 'eza --tree --color=always {} | head -200' "$@" ;;
+    export|unset) fzf --preview "eval 'echo \${}'"         "$@" ;;
+    ssh)          fzf --preview 'dig {}'                   "$@" ;;
+    *)            fzf --preview "$show_file_or_dir_preview" "$@" ;;
+  esac
 }
 
 source ~/fzf-git.sh/fzf-git.sh
