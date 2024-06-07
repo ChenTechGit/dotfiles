@@ -1,5 +1,5 @@
 #
-# /--------\  Kevinyyca (Chen Tt)
+# /--------\  Chen Tech
 # |  /---  |  Youtube: https://www.youtube.com/channel/UCpei9H0N35jQ8_TFSEGzBDA
 # |  |     |  Github: https://github.com/kevinyyca
 # |  \---  |
