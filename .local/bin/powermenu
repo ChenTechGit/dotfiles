@@ -1,11 +1,12 @@
 #!/bin/bash
 
+lock_command="slock"
 chosen=$(printf "Shutdown\nReboot\nSleep\nLock" | rofi -dmenu -p "" -i -theme $HOME/.config/rofi/powermenu.rasi)
 
 case "$chosen" in
   "Shutdown") shutdown now ;;
   "Reboot") reboot ;;
-  "Sleep") systemctl suspend ;;
+  "Sleep") systemctl suspend; "$lock_command" ;;
   "Lock") slock ;;
   *) exit 1 ;;
 esac
