@@ -481,7 +481,7 @@ audiokeys = gears.table.join(
 
 -- Lamp controls
 lampkeys = gears.table.join(
-  awful.key({ "Control", "Mod1" }, "l",
+  awful.key({ modkey, "Mod1" }, "l",
     function() awful.spawn.with_shell("~/.lamp.sh", false) end,
     { description = "toggle lamp", group = "lamp" })
 )
