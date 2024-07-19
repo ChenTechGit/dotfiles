@@ -7,14 +7,9 @@
 
 ### PLUGINS ###
 ZSH=~/.zsh
-source $ZSH/plugins/sudo/sudo.plugin.zsh                                    # Load sudo plugin
-source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh     # Load syntax highlighting plugin
-source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh             # Load zsh-autosuggestions plugin
-
-### EXPORT ###
-export TERM="xterm-256color"        # Getting proper colors
-export EDITOR="nvim"                # Use Neovim as text editor in terminal
-export VISUAL="nvim"                # Use Neovim as text editor in GUI
+source $ZSH/plugins/sudo/sudo.plugin.zsh                                    # Load Sudo plugin
+source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh     # Load Syntax Highlighting plugin
+source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh             # Load Zsh-autosuggestions plugin
 
 ### HISTORY ###
 export HISTFILE="$HOME/.zsh_history"        # Store history in $HOME/.zsh_history
