@@ -54,7 +54,19 @@
 ;;(use-package general :ensure (:wait t) :demand t)
 
 ;; Expands to: (elpaca evil (use-package evil :demand t))
-(use-package evil :ensure t :demand t)
+(use-package evil :ensure t
+  :init                                 ;; tweak evil's configuration before loading it
+  (setq evil-want-integration t)
+  (setq evil-want-integration t)        ;; This is optional since it's already set to t by default.
+  (setq evil-want-keybinding nil)
+  (setq evil-vsplit-window-right t)
+  (setq evil-split-window-below t)
+  (evil-mode))
+(use-package evil-collection :ensure t
+  :after evil
+  :config
+  (setq evil-collection-mode-list '(dashboard dired ibuffer))
+  (evil-collection-init))
 
 ;;Turns off elpaca-use-package-mode current declaration
 ;;Note this will cause evaluate the declaration immediately. It is not deferred.
