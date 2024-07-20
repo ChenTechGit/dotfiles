@@ -3,5 +3,5 @@ LICENSE
 .gitignore
 *~
 ~*
-\#*#
+\#*
 .config/emacs/elpaca
