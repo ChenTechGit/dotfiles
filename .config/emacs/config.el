@@ -122,3 +122,34 @@
 ;; Uncomment the following line if line spacing needs adjusting.
 (setq-default line-spacing 0.12)
 
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+
+(use-package toc-org :ensure t
+:commands toc-org-enable
+:init (add-hook 'org-mode-hook 'toc-org-enable))
+(add-hook 'org-mode-hook 'org-indent-mode)
+
+(use-package org-bullets :ensure t)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
+(global-display-line-numbers-mode 1)
+(global-visual-line-mode t)
+
+(use-package which-key :ensure t
+:init
+    (which-key-mode 1)
+:config
+(setq which-key-side-window-location 'bottom
+	which-key-sort-order #'which-key-key-order-alpha
+	which-key-sort-uppercase-first nil
+	which-key-add-column-padding 1
+	which-key-max-display-columns nil
+	which-key-min-display-lines 6
+	which-key-side-window-slot -10
+	which-key-side-window-max-height 0.25
+	which-key-idle-delay 0.8
+	which-key-max-description-length 25
+	which-key-allow-imprecise-window-fit t
+	which-key-separator " → " ))

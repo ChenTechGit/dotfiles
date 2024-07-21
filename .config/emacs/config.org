@@ -4,7 +4,20 @@
 #+STARTUP: showeverything
 #+OPTIONS: toc:2
 
-* IMPORTANT PROGRAMS TO LOAD FIRST
+* IMPORTANT PROGRAMS TO LOAD FIRST :toc:
+  - [[#elpaca-package-manager][Elpaca Package Manager]]
+  - [[#load-evil-mode][Load Evil Mode]]
+  - [[#general-keybindings][General Keybindings]]
+- [[#fonts][FONTS]]
+  - [[#setting-the-font-face][Setting The Font Face]]
+- [[#gui-tweaks][GUI TWEAKS]]
+  - [[#disable-menubar-toolbars-and-scrollbars][Disable Menubar, Toolbars and Scrollbars]]
+  - [[#display-line-numbers-and-truncated-lines][Display Line Numbers and Truncated Lines]]
+- [[#org-mode][ORG MODE]]
+  - [[#enable-table-of-contents][Enable Table Of Contents]]
+  - [[#enable-org-bullets][Enable Org Bullets]]
+- [[#which-key][WHICH-KEY]]
+
 ** Elpaca Package Manager
 
 #+begin_src elisp
@@ -124,4 +137,58 @@ Defining the various fonts that GNU Emacs will use.
 
 ;; Uncomment the following line if line spacing needs adjusting.
 (setq-default line-spacing 0.12)
+#+end_src
+
+
+* GUI TWEAKS
+Modify the appearance of GNU Emacs.
+
+** Disable Menubar, Toolbars and Scrollbars
+#+begin_src elisp
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+#+end_src
+
+** Display Line Numbers and Truncated Lines
+#+begin_src elisp
+(global-display-line-numbers-mode 1)
+(global-visual-line-mode t)
+#+end_src
+
+* ORG MODE
+** Enable Table Of Contents
+#+begin_src elisp
+  (use-package toc-org :ensure t
+    :commands toc-org-enable
+    :init (add-hook 'org-mode-hook 'toc-org-enable))
+#+end_src
+
+** Enable Org Bullets
+Org-bullets changes the appearance of asterisks to bullets.
+
+#+begin_src elisp
+(add-hook 'org-mode-hook 'org-indent-mode)
+(use-package org-bullets :ensure t)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+#+end_src
+
+* WHICH-KEY
+#+begin_src elisp
+  (use-package which-key :ensure t
+    :init
+      (which-key-mode 1)
+    :config
+    (setq which-key-side-window-location 'bottom
+          which-key-sort-order #'which-key-key-order-alpha
+	  which-key-sort-uppercase-first nil
+	  which-key-add-column-padding 1
+	  which-key-max-display-columns nil
+	  which-key-min-display-lines 6
+	  which-key-side-window-slot -10
+	  which-key-side-window-max-height 0.25
+	  which-key-idle-delay 0.8
+	  which-key-max-description-length 25
+	  which-key-allow-imprecise-window-fit t
+	  which-key-separator " → " ))
 #+end_src
