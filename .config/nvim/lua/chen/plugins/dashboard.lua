@@ -57,7 +57,7 @@ return {
             end
           },
           {
-            icon = " ",
+            icon = "󰉋 ",
             desc = "New file",
             key = "n",
             key_format = " [%s]",
@@ -65,7 +65,7 @@ return {
           },
           -- File tree
           {
-            icon = " ",
+            icon = "󰉋 ",
             desc = "File tree",
             key = "t",
             key_format = " [%s]",
