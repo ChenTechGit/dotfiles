@@ -93,6 +93,7 @@
       :prefix "SPC"                                ;; Set leader
       :global-prefix "M-SPC")                      ;; Access leader in Insert Mode
       
+    ;; Buffer
     (leader-keys
       "b" '(:ignore t :wk "Buffer")
       "b b" '(switch-to-buffer :wk "Switch buffer")
@@ -102,6 +103,7 @@
       "b p" '(previous-buffer :wk "Previous buffer")
       "b r" '(revert-buffer :wk "Reload buffer"))
       
+    ;; Evaluate
     (leader-keys
       "e"   '(:ignore t :wk "Evaluate")
       "e b" '(eval-buffer :wk "Evaluate Elisp in buffer")
