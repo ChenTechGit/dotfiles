@@ -77,21 +77,24 @@
     :config
     (general-evil-setup)
     
-    ;; Set up "SPC" as the global leader key
-    (general-create-definer leader-keys
-      :states '(normal insert visual emacs)
-      :keymaps 'override
-      :prefix "SPC"                                ;; Set leader
-      :global-prefix "M-SPC")                      ;; Access leader in Insert Mode
-      
+    ;; Buffer
     (leader-keys
-      "b"  '(:ignore t :wk "Buffer")
-      "bb" '(switch-to-buffer :wk "Switch buffer")
-      "bk" '(kill-this-buffer :wk "Kill this buffer")
-      "bn" '(next-buffer :wk "Next buffer")
-      "bp" '(previous-buffer :wk "Previous buffer")
-      "br" '(revert-buffer :wk "Reload buffer"))
+      "b" '(:ignore t :wk "Buffer")
+      "b b" '(switch-to-buffer :wk "Switch buffer")
+      "b i" '(ibuffer :wk "Ibuffer")
+      "b k" '(kill-this-buffer :wk "Kill this buffer")
+      "b n" '(next-buffer :wk "Next buffer")
+      "b p" '(previous-buffer :wk "Previous buffer")
+      "b r" '(revert-buffer :wk "Reload buffer"))
       
+    ;; Evaluate
+    (leader-keys
+      "e"   '(:ignore t :wk "Evaluate")
+      "e b" '(eval-buffer :wk "Evaluate Elisp in buffer")
+      "e d" '(eval-defun :wk "Evaluate defun containing or after point")
+      "e e" '(eval-expression :wk "Evaluate an Elisp expression")
+      "e l" '(eval-last-sexp :wk "Evaluate Elisp expression before point")
+      "e r" '(eval-region :wk "Evaluate Elisp in region"))
   )
 
 (set-face-attribute 'default nil
