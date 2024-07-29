@@ -65,9 +65,6 @@ alias gpush="git push"
 alias gpushu="git push -u"
 alias gpushall="git push -u --all"
 alias gpushtags="git push -u --tags"
-# Locate
-alias locate="locate | grep -v /timeshift"
-alias locatea="/usr/bin/locate"
 # Other
 alias unimatrix="unimatrix -s 95"
 alias emacs="emacsclient -c -a 'emacs'"
