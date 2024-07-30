@@ -1,9 +1,5 @@
 LICENSE
 .git
 .gitignore
-*~
-~*
-\#*
-.\#*
 .config/emacs/auto-save-list
 .config/emacs/elpaca
