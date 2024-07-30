@@ -1,12 +1,12 @@
 #!/bin/bash
 
-lock_command="i3lock"
+lock_command="i3lock -c 000000"
 chosen=$(printf "Shutdown\nReboot\nSleep\nLock" | rofi -dmenu -p "" -i -theme $HOME/.config/rofi/powermenu.rasi)
 
 case "$chosen" in
   "Shutdown") shutdown now ;;
   "Reboot") reboot ;;
-  "Sleep") systemctl suspend; "$lock_command" ;;
-  "Lock") slock ;;
+  "Sleep") systemctl suspend; $lock_command ;;
+  "Lock") $lock_command ;;
   *) exit 1 ;;
 esac
