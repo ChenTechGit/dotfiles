@@ -19,7 +19,7 @@ sudo pacman -S git stow
 
 # 📥 Installation
 
-First clone this repository in your $HOME directory threw Git
+First clone this repository in your $HOME directory threw Git:
 ```bash
 git clone --recursive https://github.com/ChenTechGit/dotfiles
 ```
