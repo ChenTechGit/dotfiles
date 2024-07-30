@@ -23,6 +23,10 @@ First clone this repository in your $HOME directory threw Git
 ```bash
 git clone --recursive https://github.com/ChenTechGit/dotfiles
 ```
+Clone the Testing branch with this command:
+```bash
+git clone -b Testing --recursive https://github.com/ChenTechGit/dotfiles
+```
 
 Now use GNU Stow to create symbolik links
 `NOTE You need to delete or backup your existing dotfiles such as .bashrc`
