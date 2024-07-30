@@ -1,5 +1,13 @@
-LICENSE
+# Git related
 .git
 .gitignore
+.gitmodules
+LICENSE
+
+# Emacs related
+.+~
 .config/emacs/auto-save-list
 .config/emacs/elpaca
+
+# Ignore programs I don't use anymore
+.config/kitty
