@@ -72,8 +72,6 @@ eval "$(starship init zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(fzf --zsh)"
-eval $(thefuck --alias)
-eval $(thefuck --alias fk)
 
 ### FZF ###
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
