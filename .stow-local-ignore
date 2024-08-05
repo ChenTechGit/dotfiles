@@ -3,6 +3,8 @@
 .gitignore
 .gitmodules
 LICENSE
+README.md
+requirements.md
 
 # Emacs related
 .+~
