@@ -5,6 +5,9 @@
 # |  \---  |
 # \________/
 
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
 ### PATH ###
 if [ -d "$HOME/.bin" ]; then
   PATH="$HOME/.bin:$PATH"

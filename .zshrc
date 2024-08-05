@@ -5,6 +5,9 @@
 # |  \---  |
 # \________/
 
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
 ### PLUGINS ###
 ZSH=~/.zsh
 source $ZSH/plugins/sudo/sudo.plugin.zsh                                    # Load Sudo plugin
@@ -12,9 +15,6 @@ source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh     # Lo
 source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh             # Load Zsh-autosuggestions plugin
 
 ### HISTORY ###
-export HISTFILE="$HOME/.zsh_history"        # Store history in $HOME/.zsh_history
-export HISTSIZE=10000                       # Use a history size of 1000
-export SAVEHIST=10000                       # Use a history size of 1000
 setopt appendhistory                        # Enable history
 
 ### PATH ###
