@@ -73,6 +73,10 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(fzf --zsh)"
 
+### ZSH COMPLETION ###
+autoload -Uz compinit
+compinit
+
 ### FZF ###
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"

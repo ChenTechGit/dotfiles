@@ -64,6 +64,13 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init --cmd cd bash)"
 eval "$(fzf --bash)"
 
+### BASH COMPLETION ###
+if [ -f /etc/bash_completion ]; then
+  . /etc/bash_completion
+elif [ -f /usr/share/bash-completion/bash_completion]; then
+  . /usr/share/bash-completion/bash_completion
+fi
+
 ### FZF ###
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
