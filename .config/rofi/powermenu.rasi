@@ -1,5 +1,5 @@
 configuration {
-  font: "JetBrains Nerd Font 11";
+  font: "MesloLGS Mono Nerd Font 11.2";
   modi: "dmenu";
 }
 

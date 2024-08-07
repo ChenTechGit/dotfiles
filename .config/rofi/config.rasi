@@ -2,7 +2,7 @@ configuration {
   display-drun: "Applications:";
   display-window: "Windows:";
   drun-display-format: "{icon} {name}";
-  font: "JetBrains Nerd Font 11";
+  font: "MesloLGS Mono Nerd Font 11.2";
   modi: "window,run,drun";
   show-icons: true;
   icon-theme: "Papirus";
