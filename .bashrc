@@ -25,8 +25,8 @@ if [ -d "$HOME/.local/bin" ]; then
 fi
 
 ### ALIASES ###
-alias reloadrc="source ~/.bashrc"
-alias creloadrc="clear; source ~/.bashrc"
+alias rloadrc="source ~/.bashrc"
+alias crloadrc="clear; source ~/.bashrc"
 # Ls
 alias eza="eza --color=always --git --icons=always"
 alias ls="eza"
