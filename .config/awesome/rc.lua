@@ -492,8 +492,15 @@ screenshotkeys = gears.table.join(
     { description = "take a screenshot of current monitor", group = "screenshot" })
 )
 
+-- Powermenu
+powermenukeys = gears.table.join(
+  awful.key({ "Control", modkey}, "p", function ()
+    awful.spawn.with_shell("~/.local/bin/powermenu")
+  end, {description = "Open powermenu", group = "Powermenu"})
+)
+
 -- Set keys
-root.keys(awful.util.table.join(globalkeys, audiokeys, lampkeys, screenshotkeys))
+root.keys(awful.util.table.join(globalkeys, audiokeys, lampkeys, screenshotkeys, powermenukeys))
 -- }}}
 
 -- {{{ Rules
