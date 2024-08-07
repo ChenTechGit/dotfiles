@@ -43,7 +43,7 @@ element {
   background-color: @bg;
   color: @inactive-fg;
   padding: 4px;
-  border-radius: 11.5px;
+  border-radius: 14px;
   font: inherit;
 }
 

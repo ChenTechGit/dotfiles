@@ -9,7 +9,7 @@ configuration {
   bg: #1a1b26;
   fg: #c0caf5;
 
-  selected-bg: #283457;
+  selected-bg: #4983FF;
   inactive-fg: #545c7e;
 
   background-color: @bg;
@@ -23,7 +23,7 @@ element {
   background-color: @bg;
   color: @inactive-fg;
   padding: 3px;
-  border-radius: 8px;
+  border-radius: 14px;
   font: inherit;
 }
 
