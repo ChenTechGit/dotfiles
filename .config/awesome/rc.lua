@@ -61,7 +61,7 @@ beautiful.useless_gap = 10.3 -- Set useless gaps
 -- Borders
 beautiful.border_width = 1.5
 beautiful.border_focus = "#007AFF"
-beautiful.border_normal = "#0554AA"
+beautiful.border_normal = "#2A4766"
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
