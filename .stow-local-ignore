@@ -6,10 +6,5 @@ LICENSE
 README.md
 requirements.md
 
-# Emacs related
-.+~
-.config/emacs/auto-save-list
-.config/emacs/elpaca
-
 # Ignore programs I don't use anymore
 .config/kitty
