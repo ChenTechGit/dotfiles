@@ -1,6 +1,6 @@
 --
---  /-------\  Kevinyyca (Chen Tt)
--- |  /---  |  Youtube: https://www.youtube.com/channel/UCpei9H0N35jQ8_TFSEGzBDA
+--  /-------\  Chen Tech
+-- |  /---  |  Youtube: https://www.youtube.com/@chen_tech
 -- |  |     |  Github: https://github.com/kevinyyca
 -- |  \---  |
 -- \________/
