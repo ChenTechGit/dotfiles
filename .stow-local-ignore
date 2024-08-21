@@ -13,6 +13,3 @@ requirements.md
 
 # Ignore programs I don't use anymore
 .config/kitty
-.zshrc
-.zshenv
-.zsh
