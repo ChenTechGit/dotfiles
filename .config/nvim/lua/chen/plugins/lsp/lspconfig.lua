@@ -117,6 +117,14 @@ return {
     -- Marksman
     lspconfig.marksman.setup{}
 
+    -- Rust Analyzer
+    lspconfig.rust_analyzer.setup {
+      -- Server-specific settings. See `:help lspconfig-setup`
+      settings = {
+        ['rust-analyzer'] = {},
+      },
+    }
+
     -- `/` cmdline setup.
     cmp.setup.cmdline('/', {
       mapping = cmp.mapping.preset.cmdline(),
