@@ -75,7 +75,7 @@ return {
           {
             icon = " ",
             desc = "Change colorscheme",
-            key = "f",
+            key = "c",
             key_format = " [%s]",
             action = function()
               vim.cmd([[Lazy load telescope.nvim]]) -- Load Telescope
