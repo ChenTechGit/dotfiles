@@ -5,9 +5,6 @@
 # |  \---  |
 # \________/
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
 ### EXPORT ###
 export XDG_CONFIG_HOME="$HOME/.config"                                 # Use $HOME/.config as config directory
 export TERM="xterm-256color"                                           # Getting proper colors

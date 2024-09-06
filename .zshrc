@@ -5,9 +5,6 @@
 # |  \---  |
 # \________/
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
 ### PLUGINS ###
 ZSH=~/.zsh
 source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh     # Load Syntax Highlighting plugin
