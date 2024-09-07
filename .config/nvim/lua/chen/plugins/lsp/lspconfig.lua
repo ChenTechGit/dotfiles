@@ -12,6 +12,7 @@ return {
     local cmp = require("cmp")
 
     local keymap = vim.keymap
+    local capabilities = cmp_nvim_lsp.default_capabilities()
 
     local opts = { noremap = true, silent = true }
     local on_attach = function(client, bufnr)
@@ -60,6 +61,8 @@ return {
 
     -- Lua_ls LSP
     lspconfig.lua_ls.setup {
+      capabilities = capabilities,
+      on_attach = on_attach,
       on_init = function(client)
         local path = client.workspace_folders[1].name
         if not vim.loop.fs_stat(path..'/.luarc.json') and not vim.loop.fs_stat(path..'/.luarc.jsonc') then
@@ -92,6 +95,8 @@ return {
 
     -- Pylsp LSP
     lspconfig.pylsp.setup{
+      capabilities = capabilities,
+      on_attach = on_attach,
       settings = {
         pylsp = {
           plugins = {
@@ -112,10 +117,15 @@ return {
     end
 
     -- Marksman
-    lspconfig.marksman.setup{}
+    lspconfig.marksman.setup{
+      capabilities = capabilities,
+      on_attach = on_attach
+    }
 
     -- Rust Analyzer
     lspconfig.rust_analyzer.setup{
+      capabilities = capabilities,
+      on_attach = on_attach,
       settings = {
         ['rust-analyzer'] = {
           diagnostics = {
