@@ -1,5 +1,8 @@
 return {
   "numToStr/Comment.nvim",
-  event = { "BufReadPre", "BufNewFile" },
+  keys = {
+    { "gcc", mode = "n" },
+    { "gc", mode = "v" }
+  },
   config = true
 }
