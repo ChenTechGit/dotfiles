@@ -115,7 +115,7 @@ return {
     lspconfig.marksman.setup{}
 
     -- Rust Analyzer
-    require'lspconfig'.rust_analyzer.setup{
+    lspconfig.rust_analyzer.setup{
       settings = {
         ['rust-analyzer'] = {
           diagnostics = {
