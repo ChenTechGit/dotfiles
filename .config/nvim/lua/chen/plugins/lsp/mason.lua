@@ -36,7 +36,7 @@ return {
 
     mason_tool_installer.setup({
       ensure_installed = {
-        "rustfmt",
+        "rustywind",
         "prettier",
         "stylua",
         "black",
