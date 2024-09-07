@@ -2,11 +2,13 @@ return {
   "williamboman/mason.nvim",
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
+    "WhoIsSethDaniel/mason-tool-installer.nvim"
   },
   event = { "BufReadPre", "BufNewFile" },
   config = function()
     local mason = require("mason")                     -- Import Mason
     local mason_lspconfig = require("mason-lspconfig") -- Import Mason-lspconfig
+    local mason_tool_installer = require("mason-tool-installer")
 
     -- Enable Mason and configure icons
     mason.setup({
@@ -25,17 +27,21 @@ return {
         -- LSP's
         "rust-analyzer",
         "pylsp",
-        "lua_ls",
-        -- Formatters
+        "lua_ls"
+      },
+
+      -- Auto-install confiured servers (with lspconfig)
+      automatic_installation = true, -- Not the same as ensure_installed
+    })
+
+    mason_tool_installer.setup({
+      ensure_installed = {
         "rustfmt",
         "prettier",
         "stylua",
         "black",
         "isort"
-      },
-
-      -- Auto-install confiured servers (with lspconfig)
-      automatic_installation = true, -- Not the same as ensure_installed
+      }
     })
 
     -- Keymaps
