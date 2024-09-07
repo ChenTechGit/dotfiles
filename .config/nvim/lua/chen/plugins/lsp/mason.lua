@@ -25,7 +25,7 @@ return {
         "rust-analyzer",
         "pylsp",
         "lua_ls",
-        "marksman"
+        "prettier"
       },
 
       -- Auto-install confiured servers (with lspconfig)
