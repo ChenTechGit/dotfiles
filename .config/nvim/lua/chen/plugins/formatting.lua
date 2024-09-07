@@ -8,7 +8,10 @@ return {
       formatters_by_ft = {
         rust = { "rustfmt" },
         python = { "black", "isort" },
-        lua = { "stylua" }
+        lua = { "stylua" },
+        markdown = { "prettier" },
+        json = { "prettier" },
+        yaml = { "prettier" }
       }
     })
 
