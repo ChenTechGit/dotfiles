@@ -58,9 +58,6 @@ return {
       keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- Mapping to restart lsp if necessary
     end
 
-    -- Used to enable autocompletion (assign to every lsp server config)
-    local capabilities = cmp_nvim_lsp.default_capabilities()
-
     -- Lua_ls LSP
     lspconfig.lua_ls.setup {
       on_init = function(client)
@@ -118,11 +115,14 @@ return {
     lspconfig.marksman.setup{}
 
     -- Rust Analyzer
-    lspconfig.rust_analyzer.setup {
-      -- Server-specific settings. See `:help lspconfig-setup`
+    require'lspconfig'.rust_analyzer.setup{
       settings = {
-        ['rust-analyzer'] = {},
-      },
+        ['rust-analyzer'] = {
+          diagnostics = {
+            enable = false;
+          }
+        }
+      }
     }
 
     -- `/` cmdline setup.
