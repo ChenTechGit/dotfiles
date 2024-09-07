@@ -22,10 +22,16 @@ return {
     mason_lspconfig.setup({
       -- List of servers for mason to install
       ensure_installed = {
+        -- LSP's
         "rust-analyzer",
         "pylsp",
         "lua_ls",
-        "prettier"
+        -- Formatters
+        "rustfmt",
+        "prettier",
+        "stylua",
+        "black",
+        "isort"
       },
 
       -- Auto-install confiured servers (with lspconfig)
