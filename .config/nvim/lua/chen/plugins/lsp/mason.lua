@@ -25,7 +25,7 @@ return {
       -- List of servers for mason to install
       ensure_installed = {
         -- LSP's
-        "rust-analyzer",
+        "rust_analyzer",
         "pylsp",
         "lua_ls"
       },
