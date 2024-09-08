@@ -60,7 +60,6 @@ alias emacs="emacsclient -c -a 'emacs'"
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias fgrep="fgrep --color=auto"
-alias cat='bat'
 alias lcat="lolcat"
 
 ### EVAL ###
