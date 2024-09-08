@@ -36,11 +36,11 @@ return {
     -- Keymaps
     local keymap = vim.keymap
 
-    keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Fuzzy find files in cwd" })          -- Fuzzy find files in cwd
-    keymap.set("n", "<leader>fr", ":Telescope oldfiles<CR>", { desc = "Fuzzy find recent files" })            -- Fuzzy find recent files
-    keymap.set("n", "<leader>fs", ":Telescope live_grep<CR>", { desc = "Find string in cwd" })                -- Find string in cwd (Requires system package: Ripgrep)
-    keymap.set("n", "<leader>fc", ":Telescope grep_string<CR>", { desc = "Find string under cursor in cwd" }) -- Find string under cursor in cwd (Requires system package: Ripgrep)
-    keymap.set("n", "<leader>fn", ":Telescope noice<CR>", { desc = "Fuzzy find in Noice message history" })   -- Fuzzy find in Noice message history
+    keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = "Fuzzy find files in cwd" })          -- Fuzzy find files in cwd
+    keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<CR>", { desc = "Fuzzy find recent files" })            -- Fuzzy find recent files
+    keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<CR>", { desc = "Find string in cwd" })                -- Find string in cwd (Requires system package: Ripgrep)
+    keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<CR>", { desc = "Find string under cursor in cwd" }) -- Find string under cursor in cwd (Requires system package: Ripgrep)
+    keymap.set("n", "<leader>fn", "<cmd>Telescope noice<CR>", { desc = "Fuzzy find in Noice message history" })   -- Fuzzy find in Noice message history
 
     -- Change colors
     vim.cmd([[highlight TelescopeNormal guibg=#16161e00]]) -- Make the background of Telescope transparent

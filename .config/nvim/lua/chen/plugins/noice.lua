@@ -20,6 +20,6 @@ return {
     -- Keymaps
     local keymap = vim.keymap
 
-    keymap.set("n", "<leader>nd", ":NoiceDismiss<CR>", { desc = "Dismiss Noice message"} ) -- Dismiss Noice message
+    keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", { desc = "Dismiss Noice message"} ) -- Dismiss Noice message
   end
 }

@@ -6,7 +6,7 @@ return {
       -- Keymaps
       local keymap = vim.keymap
 
-      keymap.set("n", "<leader>gc", ":Git ", { desc="Execute a git command" }) -- Execute a git command
+      keymap.set("n", "<leader>gc", "<cmd>Git ", { desc="Execute a git command" }) -- Execute a git command
     end
   },
   {
