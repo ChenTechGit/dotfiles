@@ -5,6 +5,7 @@ return {
     "WhoIsSethDaniel/mason-tool-installer.nvim"
   },
   event = { "BufReadPre", "BufNewFile" },
+  keys = { "<leader>um" },
   config = function()
     local mason = require("mason")                     -- Import Mason
     local mason_lspconfig = require("mason-lspconfig") -- Import Mason-lspconfig
