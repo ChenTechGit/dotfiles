@@ -1,0 +1,25 @@
+[user]
+	name = ChenTechGit
+	email = Unlit0128@proton.me
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
+[core]
+  pager = delta
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true # Use n and N to move between diff sections
+  side-by-side = true # Side by side view
+
+[merge]
+  conflictstyle = diff3
+
+[diff]
+  colorMoved = default
