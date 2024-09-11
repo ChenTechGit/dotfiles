@@ -66,6 +66,8 @@ alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias fgrep"fgrep --color=auto"
 alias lcat="lolcat"
+# Custom
+alias pwd="~/.local/bin/pwd"
 
 ### EVAL ###
 eval "$(starship init zsh)"

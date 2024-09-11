@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Define variables
+LIGHT_BLUE='\033[34m'             # Light blue color
+BOLD='\033[1m'                    # Bold ansi escape code
+RESET='\033[0m'                   # Reset color
+PWD=$(pwd)                        # Get PWD
+
+# Display output
+printf "${BOLD}${LIGHT_BLUE}󰉋 ${PWD}${RESET}\n"
