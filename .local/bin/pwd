@@ -2,9 +2,42 @@
 
 # Define variables
 LIGHT_BLUE='\033[34m'             # Light blue color
+RED='\033[31m'
 BOLD='\033[1m'                    # Bold ansi escape code
 RESET='\033[0m'                   # Reset color
-PWD=$(pwd)                        # Get PWD
+
+__invalid_option() {
+  printf "${BOLD}${RED}Error: Invalid option $1 (Exit code: 2)\n"
+  exit 2
+}
+
+for arg in "$@"; do
+  option="none"
+  case "$arg" in
+    -P|--physical)
+      option="-P"
+      ;;
+    -L|--logical)
+      option="-L"
+      ;;
+    *)
+      if echo "$arg" | grep -q '^[-]'; then
+        __invalid_option "$arg"
+      fi
+  esac
+done
+
+case "$option" in
+  none)
+    PWD=$(pwd)
+    ;;
+  -P)
+    PWD=$(pwd -P)
+    ;;
+  -L)
+    PWD=$(pwd -L)
+    ;;
+esac
 
 # Display output
 printf "${BOLD}${LIGHT_BLUE}󰉋 ${PWD}${RESET}\n"
