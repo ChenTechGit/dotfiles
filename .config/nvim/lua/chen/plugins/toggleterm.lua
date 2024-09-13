@@ -1,9 +1,9 @@
 return {
   "akinsho/toggleterm.nvim",
   keys = {
-    "<leader>th",
-    "<leader>tf",
-    "<leader>tt"
+    "<leader>ch",
+    "<leader>cf",
+    "<leader>ct"
   },
   config = function()
     local toggleterm = require("toggleterm")
