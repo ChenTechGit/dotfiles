@@ -71,7 +71,6 @@ alias pwd="~/.local/bin/pwd"
 
 ### EVAL ###
 eval "$(starship init zsh)"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(fzf --zsh)"
 
