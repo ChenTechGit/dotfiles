@@ -5,3 +5,4 @@
 .config/emacs/auto-save-list
 .config/emacs/elpaca
 .config/btop/btop.log
+.local/bin/lamp
