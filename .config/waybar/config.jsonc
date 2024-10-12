@@ -43,6 +43,7 @@
             "4": "",   // Media (PDFs, videos, pictures, etc)
             "5": "",   // Photo editing (GIMP)
             "6": "󰑋",   // Video recorder (OBS)
+            "7": "󰊴",   // Gaming
             "urgent": "",
             "active": "",
             "default": ""
