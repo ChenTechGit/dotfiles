@@ -18,7 +18,9 @@ sudo pacman -S git stow
 ```
 
 # 📥 Installation
-
+> [!NOTE]  
+> I often merge the Main branch and the Testing branch together, right after
+> A commit.
 First clone this repository in your $HOME directory threw Git:
 ```bash
 git clone --recursive https://github.com/ChenTechGit/dotfiles
