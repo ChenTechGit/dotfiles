@@ -1,8 +1,6 @@
 <h1 align="center">📄 My dotfiles</h1>
 
-This repository contains the dotfiles in my system
-
-# 📦 Requirements
+<h1 align="center">📦 Requirements</h1>
 
 Make sure you have GNU Stow and Git installed on your system
 
@@ -16,12 +14,10 @@ Arch based:
 ```bash
 sudo pacman -S git stow
 ```
-
-# 📥 Installation
+<h1 align="center">📥 Installation</h1>
 > [!NOTE]  
-> I often merge the Main branch and the Testing branch together, right after
-> A commit.
-First clone this repository in your $HOME directory threw Git:
+> I often merge the Main branch and the Testing branch together, right after a commit.
+First clone this repository in your $HOME directory with Git:
 ```bash
 git clone --recursive https://github.com/ChenTechGit/dotfiles
 ```
