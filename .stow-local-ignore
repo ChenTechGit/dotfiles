@@ -8,6 +8,9 @@ requirements.md
 
 # Ignore programs I don't use anymore
 .config/awesome
+.config/picom
+.config/polybar
+.config/rofi
 .config/kitty
 .bashrc
 .bash_profile
