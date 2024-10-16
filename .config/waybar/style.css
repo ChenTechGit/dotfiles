@@ -2,4 +2,16 @@
   font-family: FontAwesome;
   font-size: 14.3px;
   border-radius: 10px;
+  background-color: transparent;
+}
+
+#workspaces {
+  background-color: #1E1E2E;
+  border-radius: 20px;
+}
+
+#window {
+  background-color: #1E1E2E;
+  border-radius: 20px;
+  padding: 0 12px;
 }
