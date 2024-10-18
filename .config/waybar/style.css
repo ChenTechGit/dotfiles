@@ -9,9 +9,14 @@
   background-color: transparent;
 }
 
+/*Set default colors and stuff for modules*/
+.module {
+  background-color: #1E1E2E;
+  border-radius: 20px;
+}
+
 /*Workspaces*/
 #workspaces {
-  background-color: #1E1E2E;
   border-radius: 20px;
 }
 
@@ -25,20 +30,16 @@
 
 /*Window*/
 #window {
-  background-color: #1E1E2E;
   border-radius: 20px;
   padding: 0 12px;
 }
 
-.modules-right {
-  background-color: #1E1E2E;
-  border-radius: 20px;
+#tray {
   padding: 0 11px;
 }
 
 /*Clock*/
 #clock {
-  /* color: #7aa2f7; */
   color: #e0af68;
   color: #F9E2AF;
 }
