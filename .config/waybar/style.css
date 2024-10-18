@@ -20,6 +20,10 @@
   border-radius: 20px;
 }
 
+#workspaces button {
+  border-radius: 20px;
+}
+
 #workspaces button.active {
   color: #89B4FA;
 }
