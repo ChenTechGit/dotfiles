@@ -34,6 +34,7 @@
   padding: 0 12px;
 }
 
+/*System tray*/
 #tray {
   padding: 0 11px;
 }
@@ -42,4 +43,5 @@
 #clock {
   color: #e0af68;
   color: #F9E2AF;
+  padding: 0 11px;
 }
