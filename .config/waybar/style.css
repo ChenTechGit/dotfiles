@@ -1,5 +1,5 @@
 /*This config uses both Tokyonight and Catpuccin colors*/
-/*So the theme is called Tokyocat*/
+/*Theme is called Tokyocat*/
 #waybar {
   font-family: FontAwesome;
   font-size: 14.3px;
@@ -10,6 +10,10 @@
 #workspaces {
   background-color: #1E1E2E;
   border-radius: 20px;
+}
+
+#workspaces button.active {
+  color: #89B4FA;
 }
 
 #window {
