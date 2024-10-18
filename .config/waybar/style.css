@@ -16,6 +16,10 @@
   color: #89B4FA;
 }
 
+#workspaces button.urgent {
+  color: #f7768e;  /*Color from Tokyonight-Dark*/
+}
+
 #window {
   background-color: #1E1E2E;
   border-radius: 20px;
