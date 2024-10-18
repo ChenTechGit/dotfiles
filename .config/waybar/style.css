@@ -1,5 +1,7 @@
 /*This config uses both Tokyonight and Catppuccin colors*/
 /*Theme is called Tokyocat*/
+
+/*Waybar*/
 #waybar {
   font-family: FontAwesome;
   font-size: 14.3px;
@@ -7,6 +9,7 @@
   background-color: transparent;
 }
 
+/*Workspaces*/
 #workspaces {
   background-color: #1E1E2E;
   border-radius: 20px;
@@ -20,6 +23,7 @@
   color: #f7768e;  /*Color from Tokyonight-Dark*/
 }
 
+/*Window*/
 #window {
   background-color: #1E1E2E;
   border-radius: 20px;
@@ -32,6 +36,7 @@
   padding: 0 11px;
 }
 
+/*Clock*/
 #clock {
   /* color: #7aa2f7; */
   color: #e0af68;
