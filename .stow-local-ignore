@@ -11,6 +11,6 @@ requirements.md
 .config/picom
 .config/polybar
 .config/rofi
-.config/kitty
+.config/alacritty
 .bashrc
 .bash_profile
