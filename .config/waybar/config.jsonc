@@ -8,6 +8,7 @@
     "margin": 6,
     // Choose the order of the modules
     "modules-left": [
+        "clock",
         "hyprland/workspaces"
     ],
     "modules-center": [
@@ -19,7 +20,6 @@
         "battery",
         "battery#bat2",
         "cpu",
-        "clock",
         "tray"
     ],
     // Modules configuration
@@ -44,7 +44,7 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-        "format": " {:%m/%d %a   %I:%M %p}",
+        "format": " {:%m/%d   %I:%M %p}",
         // "tooltip-format": "{:%Y-%m-%d | %H:%M}"
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
         // "format-alt": "{:%Y-%m-%d}"
