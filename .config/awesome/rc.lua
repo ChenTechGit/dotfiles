@@ -64,7 +64,7 @@ beautiful.border_focus = "#007AFF"
 beautiful.border_normal = "#2A4766"
 
 -- This is used later as the default terminal and editor to run.
-terminal = "alacritty"
+terminal = "kitty"
 editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
 
