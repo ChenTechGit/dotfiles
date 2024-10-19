@@ -49,6 +49,10 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
         // "format-alt": "{:%Y-%m-%d}"
     },
+    "hyprland/window": {
+      "icon": true,
+      "icon-size": 23
+    },
     "cpu": {
       "format": "  {usage}%"
     },
