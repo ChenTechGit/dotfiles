@@ -18,6 +18,7 @@
         "backlight",
         "battery",
         "battery#bat2",
+        "cpu",
         "clock",
         "tray"
     ],
@@ -47,6 +48,9 @@
         // "tooltip-format": "{:%Y-%m-%d | %H:%M}"
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
         // "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+      "format": " {usage}%"
     },
     "backlight": {
         // "device": "acpi_video1",
