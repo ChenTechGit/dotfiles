@@ -20,6 +20,7 @@
         "battery",
         "battery#bat2",
         "cpu",
+        "memory",
         "tray"
     ],
     // Modules configuration
@@ -52,6 +53,10 @@
     "hyprland/window": {
       "icon": true,
       "icon-size": 23
+    },
+    "memory": {
+      "format": "   {percentage}%",
+      "interval": 10
     },
     "cpu": {
       "format": "  {usage}%"
