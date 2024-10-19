@@ -25,7 +25,7 @@
   RET_ERROR=false
   for ARG in "$@"; do
     # Store the output of the 'type' command for the current argument
-    TYPE_OUTPUT=$(type "$ARG")
+    TYPE_OUTPUT=$(builtin type "$ARG")
 
     # Check if the command was found
     if [ $? -ne 0 ]; then

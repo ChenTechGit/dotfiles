@@ -67,7 +67,7 @@ alias egrep="egrep --color=auto"
 alias fgrep"fgrep --color=auto"
 alias lcat="lolcat"
 # Custom
-alias type="~/.local/bin/type"
+alias type="source ~/.local/bin/type"
 alias pwd="~/.local/bin/pwd"
 
 ### EVAL ###
