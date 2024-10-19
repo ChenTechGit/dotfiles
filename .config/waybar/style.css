@@ -15,9 +15,17 @@
   border-radius: 20px;
 }
 
-/*CPU*/
-#cpu {
+.modules-right {
+  background-color: #1E1E2E;
+  border-radius: 20px;
   padding: 0 8px;
+}
+
+/*Clock*/
+#clock {
+  color: #e0af68;
+  color: #F9E2AF;
+  padding: 0 11px;
 }
 
 /*Workspaces*/
@@ -45,12 +53,11 @@
 
 /*System tray*/
 #tray {
-  padding: 0 11px;
+  padding: 0 5px;
 }
 
-/*Clock*/
-#clock {
-  color: #e0af68;
-  color: #F9E2AF;
-  padding: 0 11px;
+/*CPU*/
+#cpu {
+  padding: 0 5px;
+  color: #9ece6a;
 }
