@@ -19,6 +19,7 @@
         "backlight",
         "battery",
         "battery#bat2",
+        "pulseaudio",
         "cpu",
         "memory",
         "tray"
@@ -42,6 +43,9 @@
     "tray": {
         "icon-size": 20,
         "spacing": 10
+    },
+    "pulseaudio": {
+      "format": "  {volume}%"
     },
     "clock": {
         // "timezone": "America/New_York",
