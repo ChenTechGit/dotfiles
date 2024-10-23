@@ -5,4 +5,5 @@
 .config/emacs/auto-save-list
 .config/emacs/elpaca
 .config/btop/btop.log
+.config/qutebrowser/autoconfig.yml
 .local/bin/lamp
