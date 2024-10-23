@@ -129,3 +129,7 @@ config.set('content.local_content_can_access_remote_urls', True, 'file:///home/c
 # Allow locally loaded documents to access other local URLs.
 # Type: Bool
 config.set('content.local_content_can_access_file_urls', False, 'file:///home/chen/.local/share/qutebrowser/userscripts/*')
+
+# Dark mode
+config.set('colors.webpage.darkmode.enabled', True)
+config.set('colors.webpage.preferred_color_scheme', 'dark')
