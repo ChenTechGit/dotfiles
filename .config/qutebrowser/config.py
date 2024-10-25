@@ -132,3 +132,6 @@ config.set('content.local_content_can_access_file_urls', False, 'file:///home/ch
 
 # Dark mode
 config.set('colors.webpage.preferred_color_scheme', 'dark')
+
+# Colors (Tokyonight Dark)
+config.set('colors.webpage.bg', '#1a1b26')
