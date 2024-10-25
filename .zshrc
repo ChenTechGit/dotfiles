@@ -17,11 +17,11 @@ source ~/.config/zsh/conf/plugload.zsh
 
 source ~/.config/zsh/conf/env.zsh
 
-################
-###  SETOPT ###
-################
+#############
+###  OPT ###
+#############
 
-source ~/.config/zsh/conf/setopt.zsh
+source ~/.config/zsh/conf/opt.zsh
 
 ##############
 ###  PATH ###
@@ -33,7 +33,7 @@ source ~/.config/zsh/conf/path.zsh
 ###  ALIASES ###
 #################
 
-source ~/.config/zsh/conf/aliases.zsh
+source ~/.config/zsh/conf/alias.zsh
 
 ##############
 ###  EVAL ###
