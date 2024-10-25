@@ -1,2 +1,5 @@
-# Auto-start
+###########################
+###  START UP COMMANDS ###
+###########################
+
 fastfetch      # Fetch program

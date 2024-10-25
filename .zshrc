@@ -41,9 +41,9 @@ source ~/.config/zsh/conf/alias.zsh
 
 source ~/.config/zsh/conf/eval.zsh
 
-###################################
-###  PRIVILEGE ESCALATION TOOL ###
-###################################
+###################
+### 󰊕 FUNCTIONS ###
+###################
 
 source ~/.config/zsh/conf/func.zsh
 

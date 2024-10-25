@@ -1,4 +1,7 @@
-# Zsh Completion
+########################
+###  ZSH COMPLETION ###
+########################
+
 autoload -Uz compinit
 compinit
 

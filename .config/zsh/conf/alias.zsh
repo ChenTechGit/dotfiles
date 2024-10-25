@@ -1,3 +1,7 @@
+#################
+###  ALIASES ###
+#################
+
 # Aliases
 alias rloadrc="source ~/.zshrc"
 alias crloadrc="clear; source ~/.zshrc"
