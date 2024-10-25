@@ -12,5 +12,4 @@ requirements.md
 .config/polybar
 .config/rofi
 .config/alacritty
-.bashrc
 .bash_profile
