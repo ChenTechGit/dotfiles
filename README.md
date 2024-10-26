@@ -11,6 +11,7 @@ I watched the videos made in 2023 since the 2024 ones didn't exist yet
 
 ### TODO
 - [ ] Create installation script so dependencies will be installed (Best on Arch Linux since I use it)
+- [ ] RECONFIGURE Neovim (since my config is kinda broken ):
 
 <h1 align="center">📦 Requirements</h1>
 
