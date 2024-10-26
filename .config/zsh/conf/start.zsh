@@ -11,5 +11,8 @@
     fastfetch
   elif [[ "$config" == "compact" ]]; then
     fastfetch -c ~/.config/fastfetch/compact.jsonc
+  else
+    echo -e "\033[1;31m Error: invalid config value \"$config\" in \033[4m$HOME/.config/zsh/conf/start.zsh line 8\033[0m"
+    echo -e "\033[1;31m(While trying to start Fastfetch)\033[0m"
   fi
 }
