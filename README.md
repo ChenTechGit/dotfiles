@@ -1,6 +1,14 @@
 <h1 align="center">📄 My dotfiles</h1>
 I use Arch btw.
 
+### Credits
+#### Fastfetch
+1. Compact config based on: https://github.com/fastfetch-cli/fastfetch/blob/dev/presets/examples/13.jsonc
+2. Default config based on: https://github.com/Sk7Str1pe/Public
+#### Neovim
+I learnt to configure Neovim from these videos from [Josean Martinez](https://www.youtube.com/@joseanmartinez)
+I watched the videos made in 2023 since the 2024 ones didn't exist yet
+
 ### TODO
 - [ ] Create installation script so dependencies will be installed (Best on Arch Linux since I use it)
 
