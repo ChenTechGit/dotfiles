@@ -1,5 +1,5 @@
 <h1 align="center">📄 My dotfiles</h1>
-**I use Arch btw.**
+I use Arch btw.
 
 ### TODO
 - [ ] Create installation script so dependencies will be installed (Best on Arch Linux since I use it)
