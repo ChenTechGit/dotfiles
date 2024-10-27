@@ -5,7 +5,7 @@
 # Section: Fastfetch
 {
   # Chose which Fastfetch config to use.
-  config="defaulta"
+  config="default"
   # config="compact"
   if [[ "$config" == "default" ]]; then
     fastfetch
