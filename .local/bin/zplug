@@ -3,7 +3,7 @@
 
 {
   # Define program info
-  VERSION="v0.0.2"
+  VERSION="v0.0.3"
 
   # Colors
   RED="\033[31m"
@@ -20,6 +20,10 @@
     return 1
   fi
 
+  function verinfo() {
+    printf "${INFO} ${UNDERLINE}Zplug ${VERSION}${RESET}${BOLD} by Chen Tech${RESET}\n"
+  }
+
   # Loop through each argument
   for ARG in "$@"; do
     case "$ARG" in
@@ -27,7 +31,7 @@
         echo "insert help info"
         ;;
       -v | version)
-        printf "${INFO} ${UNDERLINE}Zplug ${VERSION}${RESET}${BOLD} by Chen Tech${RESET}\n"
+        verinfo
     esac
   done
 }
