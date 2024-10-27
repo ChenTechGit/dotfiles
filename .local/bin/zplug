@@ -3,7 +3,7 @@
 
 {
   # Define program info
-  VERSION="v0.0.3"
+  VERSION="v0.0.4"
 
   # Colors
   RED="\033[31m"
@@ -32,6 +32,15 @@
         ;;
       -v | version)
         verinfo
+        ;;
+      -I | --info | info)
+        verinfo
+        if [ -z "$ZPLUG_DIR" ]; then
+          printf "${BOLD} Plugin directory is in ${UNDERLINE}${HOME}/.config/zsh/plugins/ (default)${RESET}\n"
+        else
+          printf "${BOLD} Plugin directory is in ${UNDERLINE}${ZPLUG_DIR}${RESET}\n"
+        fi
+
     esac
   done
 }
