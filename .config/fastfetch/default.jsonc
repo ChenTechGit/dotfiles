@@ -22,7 +22,7 @@
       "text": "hostnamectl | grep 'Operating System' | cut -f2 -d ':'"
     },
     {
-      "key": "  󰇅 hname {#keys}",
+      "key": "  󰇅 Hostname {#keys}",
       "keyColor": "red",
       "type": "title",
       "format": "{host-name}"
