@@ -3,11 +3,12 @@
 
 {
   # Define program info
-  VERSION="v0.1.4"
+  VERSION="v0.1.5"
 
   # Colors
   RED="\033[31m"
   LIGHT_BLUE="\033[94m"
+  GREEN="\033[32m"
   BOLD="\033[1m"
   UNDERLINE="\033[4m"
   ERROR="${RED}${BOLD}"
@@ -21,7 +22,7 @@
   fi
 
   function verinfo() {
-    printf "${INFO} ${UNDERLINE}Zplug ${VERSION}${RESET}${BOLD} by Chen Tech${RESET}\n"
+    printf "${INFO} ${UNDERLINE}Zsplug ${VERSION}${RESET}${BOLD} by Chen Tech${RESET}\n"
   }
 
   # Set vars
@@ -32,7 +33,7 @@
     case "$ARG" in
       # Info
       help | -h | --help)
-        echo "insert help info"
+        printf "${GREEN}Displaying Zsplug help"
         ;;
       -v | version)
         verinfo
