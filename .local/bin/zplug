@@ -3,7 +3,7 @@
 
 {
   # Define program info
-  VERSION="v0.0.4"
+  VERSION="v0.1.4"
 
   # Colors
   RED="\033[31m"
@@ -24,9 +24,13 @@
     printf "${INFO} ${UNDERLINE}Zplug ${VERSION}${RESET}${BOLD} by Chen Tech${RESET}\n"
   }
 
+  # Set vars
+  load_opr=false
+
   # Loop through each argument
   for ARG in "$@"; do
     case "$ARG" in
+      # Info
       help | -h | --help)
         echo "insert help info"
         ;;
@@ -40,7 +44,29 @@
         else
           printf "${BOLD} Plugin directory is in ${UNDERLINE}${ZPLUG_DIR}${RESET}\n"
         fi
-
+        ;;
+      load)
+        load_opr=true
+        ;;
+      *)
+        # Check operation
+        if [ "$load_opr" = true ]; then
+          if [ -f "$ARG" ]; then
+            # Load the plugin
+            printf "${INFO} Loading plugin${RESET}\n"
+            printf "${INFO} Further output will be from plugin${RESET}\n"
+            source $ARG ""
+          elif [ -f "$HOME/.config/zsh/plugins/$ARG" ]; then
+            # Load the plugin
+            printf "${INFO} Loading plugin${RESET}\n"
+            printf "${INFO} Further output will be from plugin${RESET}\n"
+            source "$HOME/.config/zsh/plugins/$ARG" ""
+          else
+            # Print error mesage
+            printf "${ERROR} No such file ${UNDERLINE}${ARG}${RESET}\n"
+          fi
+        fi
+        ;;
     esac
   done
 }
