@@ -3,7 +3,7 @@
 
 {
   # Define program info
-  VERSION="v0.0.1"
+  VERSION="v0.0.2"
 
   # Colors
   RED="\033[31m"
@@ -26,7 +26,7 @@
       help | -h | --help)
         echo "insert help info"
         ;;
-      -v)
+      -v | version)
         printf "${INFO} ${UNDERLINE}Zplug ${VERSION}${RESET}${BOLD} by Chen Tech${RESET}\n"
     esac
   done
