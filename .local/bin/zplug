@@ -1,0 +1,33 @@
+# Define annominous function so there won't be left over variables
+# after the script is sourced.
+
+{
+  # Define program info
+  VERSION="v0.0.1"
+
+  # Colors
+  RED="\033[31m"
+  LIGHT_BLUE="\033[94m"
+  BOLD="\033[1m"
+  UNDERLINE="\033[4m"
+  ERROR="${RED}${BOLD}"
+  INFO="${LIGHT_BLUE}${BOLD}"
+  RESET="\033[0m"
+
+  # Exit if no arguments were passed
+  if [ $# -eq 0 ]; then
+    printf "${ERROR} No arguments provided. (exit code 1)${RESET}\n"
+    return 1
+  fi
+
+  # Loop through each argument
+  for ARG in "$@"; do
+    case "$ARG" in
+      help | -h | --help)
+        echo "insert help info"
+        ;;
+      -v)
+        printf "${INFO} ${UNDERLINE}Zplug ${VERSION}${RESET}${BOLD} by Chen Tech${RESET}\n"
+    esac
+  done
+}
