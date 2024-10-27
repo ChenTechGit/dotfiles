@@ -28,5 +28,8 @@ config.colors = {
   brights = { "#15161e", "#f7768e", "#9ece6a", "#e0af68", "#7aa2f7", "#bb9af7", "#7dcfff", "#a9b1d6" }
 }
 
+-- Opacity
+config.window_background_opacity = 0.8
+
 -- Return config
 return config
