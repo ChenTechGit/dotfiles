@@ -3,7 +3,7 @@
 
 {
   # Define program info
-  VERSION="v0.1.5"
+  VERSION="v0.1.6"
 
   # Colors
   RED="\033[31m"
@@ -26,14 +26,14 @@
   }
 
   # Set vars
-  load_opr=false
+  opr="none"
 
   # Loop through each argument
   for ARG in "$@"; do
     case "$ARG" in
       # Info
       help | -h | --help)
-        printf "${GREEN}Displaying Zsplug help"
+        printf "${GREEN} Displaying Zsplug help\n"
         ;;
       -v | version)
         verinfo
@@ -47,21 +47,25 @@
         fi
         ;;
       load)
-        load_opr=true
+        opr="loadplug"
         ;;
       *)
         # Check operation
-        if [ "$load_opr" = true ]; then
+        if [ "$opr" = "loadplug" ]; then
           if [ -f "$ARG" ]; then
             # Load the plugin
             printf "${INFO} Loading plugin${RESET}\n"
-            printf "${INFO} Further output will be from plugin${RESET}\n"
             source $ARG ""
           elif [ -f "$HOME/.config/zsh/plugins/$ARG" ]; then
             # Load the plugin
+            zsplug_args=("$@")
+            set --
+
             printf "${INFO} Loading plugin${RESET}\n"
             printf "${INFO} Further output will be from plugin${RESET}\n"
-            source "$HOME/.config/zsh/plugins/$ARG" ""
+            source "$HOME/.config/zsh/plugins/$ARG"
+
+            set -- "${zsplug_args[@]}"
           else
             # Print error mesage
             printf "${ERROR} No such file ${UNDERLINE}${ARG}${RESET}\n"
