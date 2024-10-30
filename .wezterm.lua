@@ -6,7 +6,7 @@ local config = {}
 
 -- Configuration
 -- Wayland
-config.enable_wayland = false -- Wezterm won't show a window if set to true
+config.enable_wayland = false -- Wezterm won't show a window if set to true on Wayland
 
 -- Font
 config.font = wezterm.font("MesloLGS Nerd Font Propo", { weight = "Medium" })
