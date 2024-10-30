@@ -9,7 +9,7 @@ local config = {}
 config.enable_wayland = false -- Wezterm won't show a window if set to true
 
 -- Font
-config.font = wezterm.font("MesloLGS Nerd Font Mono")
+config.font = wezterm.font("MesloLGS Nerd Font Propo", { weight = "Medium" })
 config.font_size = 11
 
 -- Disable tab bar
