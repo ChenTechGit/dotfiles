@@ -48,7 +48,7 @@
         printf "${COMMAND_NAME} is a ${LIGHT_BLUE}${BOLD}${UNDERLINE}shell builtin"
         ;;
       "is an alias for "*)
-        printf "${COMMAND_NAME} is an ${YELLOW}${BOLD}${UNDERLINE}alias for ${REMAINING_OUTPUT##* }"
+        printf "${COMMAND_NAME} is an ${YELLOW}${BOLD}${UNDERLINE}alias for ${REMAINING_OUTPUT#is an alias for }"
         ;;
       "is a shell function")
         printf "${COMMAND_NAME} is a ${GREEN}${BOLD}${UNDERLINE}shell function"
@@ -60,10 +60,10 @@
         printf "${COMMAND_NAME} is a ${MAGENTA}${BOLD}${UNDERLINE}reserved word"
         ;;
       "is a shell function from "*)
-        printf "${COMMAND_NAME} is a ${GREEN}${BOLD}shell function from ${UNDERLINE}${REMAINING_OUTPUT##* }"
+        printf "${COMMAND_NAME} is a ${GREEN}${BOLD}shell function from ${UNDERLINE}${REMAINING_OUTPUT#is a shell function from }"
         ;;
       "is /"*)
-        printf "${COMMAND_NAME} is ${CYAN}${UNDERLINE}${BOLD}${REMAINING_OUTPUT##* }"
+        printf "${COMMAND_NAME} is ${CYAN}${UNDERLINE}${BOLD}${REMAINING_OUTPUT#is }"
         ;;
       *)
       printf "${COMMAND_NAME} ${UNDERLINE}${REMAINING_OUTPUT}"
