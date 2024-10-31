@@ -5,12 +5,6 @@
 # |  \---  |
 # \________/
 
-#################
-###  PLUGINS ###
-#################
-
-source ~/.config/zsh/conf/plugload.zsh
-
 #####################
 ###  ENVIRONMENT ###
 #####################
@@ -64,3 +58,9 @@ source ~/.config/zsh/conf/fzf.zsh
 ###########################
 
 source ~/.config/zsh/conf/start.zsh
+
+#################
+###  PLUGINS ###
+#################
+
+source ~/.config/zsh/conf/plugload.zsh
