@@ -1,2 +1,2 @@
--- Require options
+-- Require options --
 require("chen.core")
