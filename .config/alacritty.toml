@@ -49,4 +49,5 @@ style = { shape = "Block", blinking = "On" }
 
 # Font
 [font]
-normal = { family = "MesloLGS Nerd Font Propo" }
+normal = { family = "MesloLGS Nerd Font Propo"}
+builtin_box_drawing = false
