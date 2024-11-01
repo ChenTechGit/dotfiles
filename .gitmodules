@@ -7,3 +7,6 @@
 [submodule "fzf-git.sh"]
 	path = fzf-git.sh
 	url = https://github.com/junegunn/fzf-git.sh.git
+[submodule ".config/zsh/plugins/zsh-autopair"]
+	path = .config/zsh/plugins/zsh-autopair
+	url = https://github.com/hlissner/zsh-autopair
