@@ -1,3 +1,3 @@
--- Require options --
-require("chen.core.options")
-require("chen.core.keymaps")
+--  Load options and keymaps --
+require("chen.core.options")  --   Options
+require("chen.core.keymaps")  --   Keymaps
