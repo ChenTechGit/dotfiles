@@ -1,2 +1,2 @@
-require("chen.core")
-require("chen.lazy")
+require("config.core")
+require("config.lazy")
