@@ -5,6 +5,17 @@ return {
     "nvim-lua/plenary.nvim",
     { "nvim-telescope/telescope-fzf-native.nvim", build = "make" }
   },
+  -- 󰑓 Load Telescope when one of these keymaps are used
+  keys = {
+    "<leader>ff",
+    "<leader>fr",
+    "<leader>fs",
+    "<leader>fc",
+    "<leader>ft"
+  },
+  -- 󰑓 Load Telescope when the user uses the Telescope command
+  cmd = { "Telescope" },
+
   opts = function()
     local telescope = require("telescope")
     local actions = require("telescope.actions")
