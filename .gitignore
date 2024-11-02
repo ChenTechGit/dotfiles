@@ -7,3 +7,4 @@
 .config/btop/btop.log
 .config/qutebrowser/autoconfig.yml
 .local/bin/lamp
+.config/nvim/lazy-lock.json
