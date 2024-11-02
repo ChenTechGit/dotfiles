@@ -12,9 +12,9 @@ keymap.set("n", "<leader>-", "<C-x>", { desc = " Decrement number" }) --  
 
 --  Window managment --
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = " Split windows vertically" })   --  Split window vertically
-keymap.set("n", "<leader>", "<C-w>s", { desc = " Split windows horizontally" })   --  Split window horizontally
-keymap.set("n", "<leader>", "<C-w>=", { desc = "󰨑 Make splits equal size" })       -- 󰨑 Make split windows equal size
-keymap.set("n", "<leader>", "<cmd>close<CR>", { desc = "󰅙 Close current split" })  -- 󰅙 Close current split window
+keymap.set("n", "<leader>sh", "<C-w>s", { desc = " Split windows horizontally" })   --  Split window horizontally
+keymap.set("n", "<leader>se", "<C-w>=", { desc = "󰨑 Make splits equal size" })       -- 󰨑 Make split windows equal size
+keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "󰅙 Close current split" })  -- 󰅙 Close current split window
 
 -- 󰓩 Tab managment --
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = " Open new tab" })                      --  Open new tab
