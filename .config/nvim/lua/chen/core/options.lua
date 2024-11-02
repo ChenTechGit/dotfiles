@@ -1,4 +1,4 @@
-local opt = vim.opt
+local opt = vim.opt -- For conciseness
 
 --  Line number --
 opt.number = true
@@ -27,6 +27,6 @@ opt.backspace = "indent,eol,start" -- Allow backspace on indent, end of line or 
 --  Clipboard --
 opt.clipboard:append("unnamedplus") -- Use system clipboard as default register
 
---  Split windows --
+-- 󰨑 Split windows --
 opt.splitright = true -- Split vertical window to the right by default
 opt.splitbelow = true -- Split horizontal window to the bottom by default
