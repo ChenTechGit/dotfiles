@@ -1,2 +1,3 @@
 -- Require options --
-require("chen.core")
+require("chen.core.options")
+require("chen.core.keymaps")
