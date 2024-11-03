@@ -24,6 +24,7 @@ return {
         "gitignore",
         "git_rebase",
         "markdown",
+        "markdown_inline",
         "rust",
         "desktop"
       },
