@@ -1,6 +1,6 @@
 return {
   "nvim-lualine/lualine.nvim",
-  event = { "BufReadPre", "BufNewFile" },
+  event = { "BufReadPost", "BufNewFile" },
   dependencies = { "nvim-tree/nvim-web-devicons" },
   opts = function()
     local lazy_status = require("lazy.status") -- 󰆙 To configure Lazy pending updates count
