@@ -25,4 +25,5 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = " Go to previous tab"
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = " Open current buffer in new tab" })  --  Move current buffer to new tab
 
 -- 󰒲 Lazy.nvim --
-keymap.set("n", "<leader>ul", "<cmd>Lazy<CR>", { desc = "󰒲 Open Lazy UI" })     -- 󰒲 Open Lazy UI
+keymap.set("n", "<leader>lu", "<cmd>Lazy<CR>", { desc = "󰒲 Open Lazy UI" })                        -- 󰒲 Open Lazy UI
+keymap.set("n", "<leader>lc", "<cmd>Lazy clean<CR>", { desc = " Clean up unused plugins"})        --  Clean up unused plugins
