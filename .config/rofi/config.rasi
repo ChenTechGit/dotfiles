@@ -2,78 +2,10 @@ configuration {
   display-drun: "Applications:";
   display-window: "Windows:";
   drun-display-format: "{icon} {name}";
-  font: "MesloLGS Mono Nerd Font 11.2";
-  modi: "window,run,drun";
+  font: "JetBrainsMono Nerd Font 11.2";
+  modi: "drun";
   show-icons: true;
   icon-theme: "Papirus";
 }
 
-@theme "/dev/null"
-
-* {
-  bg: #1a1b26;
-  fg: #c0caf5;
-
-  selected-bg: #4983FF;
-  inactive-fg: #545c7e;
-
-  background-color: @bg;
-}
-
-window {
-  width: 45%;
-}
-
-element {
-  background-color: @bg;
-  color: @inactive-fg;
-  padding: 4px;
-  border-radius: 14px;
-  font: inherit;
-}
-
-element-text {
-  background-color: inherit;
-  text-color: inherit;
-}
-
-element selected {
-  background-color: @selected-bg;
-  color: @fg;
-}
-
-element-icon {
-  size: 28;
-}
-
-element-icon selected {
-  background-color: @selected-bg;
-}
-
-mainbox {
-  children: [inputbar, listview];
-  background-color: @bg;
-}
-
-inputbar {
-  children: [prompt, entry];
-}
-
-prompt {
-  background-color: @bg;
-  enabled: true;
-  padding: 8 0 0 8;
-  text-color: @fg;
-}
-
-entry {
-  background-color: @bg;
-  padding: 8;
-  text-color: @fg;
-}
-
-listview {
-  background-color: @bg;
-  columns: 1;
-  lines: 11;
-}
+@theme "~/.config/rofi/theme.rasi"
