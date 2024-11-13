@@ -12,6 +12,7 @@ alias ll="eza -lh"
 alias lla="eza -lha"
 alias tree="eza --tree"
 # Neovim
+alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
 alias nvm="nvim"
