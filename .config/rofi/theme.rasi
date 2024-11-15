@@ -2,8 +2,8 @@
   bg: #11121D;
   bg-alt: #A0A8CD;
 
-  fg: #FFFFFF;
-  fg-alt: #424242;
+  fg: #c0caf5;
+  inactive: #545c7e;
 
   window-border-color: #4A5057;
   
@@ -17,11 +17,15 @@
 
 element {
   padding: 12;
-  text-color: @fg-alt;
+  text-color: @inactive;
 }
 
 element selected {
+  background-color: #283457;
+  border-radius: 20px;
   text-color: @fg;
+  border: 4px;
+  border-color: #212C4E;
 }
 
 element-text {
@@ -29,35 +33,49 @@ element-text {
   text-color: inherit;
 }
 
+element-icon {
+  size: 24;
+}
+
 entry {
-  background-color: @bg-alt;
-  padding: 12;
+  background-color: inherit;
+  padding: 4;
   text-color: @fg;
+  border-radius: inherit;
 }
 
 inputbar {
-  children: [entry];
+  children: [prompt, entry];
+  background-color: @inactive;
+  border-radius: 15px;
+  padding: 8px;
 }
 
 listview {
   background-color: @bg;
   columns: 1;
   lines: 8;
+  margin: 10 0 0 0;
 }
 
 mainbox {
   background-color: @bg;
   children: [inputbar, listview];
+  margin: 10px;
 }
 
 prompt {
-  background-color: @bg-alt;
+  background-color: inherit;
   enabled: true;
-  padding: 12 0 0 12;
+  padding: 0 0 0 12;
   text-color: @fg;
 }
 
 window {
   transparency: "real";
   border-radius: 10;
+}
+
+textbox {
+  text-color: #f7768e;
 }
