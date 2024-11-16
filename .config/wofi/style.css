@@ -1,3 +1,23 @@
 #window {
   border-radius: 10px;
 }
+
+#outer-box {
+  margin: 8px;
+}
+
+#inner-box {
+  padding: 10px 0px 0px 0px;
+}
+
+#entry {
+  color: #545c7e;
+}
+
+#entry:selected {
+  color: #c0caf5;
+}
+
+#img {
+  padding: 0px 3px 0px 0px;
+}
