@@ -1,4 +1,4 @@
 --  Load options and keymaps --
 require("config.core.options")  --   Options
 require("config.core.keymaps")  --   Keymaps
--- require("config.core.ftype")    --   Ftype
+require("config.core.ftype")    --   Ftype
