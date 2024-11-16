@@ -19,8 +19,9 @@ return {
               local file_path = vim.fn.expand('%:p')  --  Get the full path of the current file
 
               if string.match(file_path, '^/home/[^/]+/dotfiles/.config/hypr/.*%.conf$') or string.match(file_path, '^/home/[^/]+/.config/hypr/.*%.conf$') then
-                return 'conf'  -- 󰦪 Display "conf" for all .conf files in the specified directories
+                return 'hyprland-conf'  -- 󰦪 Display "hyprland-conf" for all .conf files in the specified directories
               end
+
               return filename  --  Otherwise, return the actual filename
             end
           }
