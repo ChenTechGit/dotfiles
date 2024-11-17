@@ -20,7 +20,8 @@
         },
         {
             "key": "│ {#34}{icon} distro  {#keys}│",
-            "type": "os"
+            "type": "command",
+            "text": "hostnamectl | grep 'Operating System' | awk -F ': ' '{print $2}'"
         },
         {
             "key": "│ {#31} user    {#keys}│",
