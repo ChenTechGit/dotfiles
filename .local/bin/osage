@@ -1,0 +1,2 @@
+# BASED ON: https://github.com/Sk7Str1pe/Public
+birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo -e "\033[1m $days_difference days"
