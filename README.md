@@ -40,3 +40,6 @@ Now use GNU Stow to create symbolik links
 ```bash
 stow .
 ```
+
+## Old configs?
+You may find my old configs in the [unused](https://github.com/ChenTechGit/dotfiles/tree/unused).
