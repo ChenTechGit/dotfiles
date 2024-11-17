@@ -29,7 +29,7 @@ alias gb="git branch"
 alias gm="git merge"
 alias gr="git restore"
 alias gp="git push"
-alias gpa="git push -u --all"
+alias gpa="git push --all"
 # Other
 alias unimatrix="unimatrix -s 95"
 
