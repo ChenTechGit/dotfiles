@@ -217,7 +217,7 @@
     max_icon_size = 128
 
     # Paths to default icons (only neccesary when not using recursive icon lookup)
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_path = /usr/share/icons/Papirus/
 
     ### History ###
 
@@ -231,7 +231,7 @@
     ### Misc/Advanced ###
 
     # dmenu path.
-    dmenu = /usr/bin/dmenu -p dunst:
+    dmenu = /usr/bin/wofi -d dunst:
 
     # Browser for opening urls in context menu.
     browser = /usr/bin/xdg-open
@@ -315,6 +315,7 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#000000CC"
     foreground = "#888888"
+    frame_color = "#283457"
     timeout = 6
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
@@ -323,6 +324,7 @@
     background = "#000000CC"
     foreground = "#ffffff"
     timeout = 6
+    frame_color = "#7aa2f7"
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /path/to/icon
 
