@@ -1,3 +1,4 @@
+#!/bin/sh
 # Define annominous function so there won't be left over variables
 # after the script is sourced.
 

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 lock_command="i3lock -c 000000"
 chosen=$(printf "Shutdown\nReboot\nSleep\nLock" | rofi -dmenu -p "Powermenu: " -i -theme $HOME/.config/rofi/powermenu.rasi)
