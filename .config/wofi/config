@@ -1,6 +1,10 @@
-term=footclient
-allow_images=true
-hide_scroll=true
-prompt=Search
-insensitive=true
-no_actions=true
+term=footclient # Doesn't work?
+allow_images=true # Enable icons
+hide_scroll=true # Hide scroll bar
+prompt=Search # Search prompt
+insensitive=true # Insensitive search
+no_actions=true # Disable actions
+
+# Binds
+key_up=Ctrl-k
+key_down=Ctrl-j
