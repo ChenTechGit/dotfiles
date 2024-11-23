@@ -9,6 +9,7 @@ I use Arch btw.
 I learnned to configure Neovim from these videos from [Josean Martinez](https://www.youtube.com/@joseanmartinez)
 #### Other
 [Stephan Raabe's ML4W config](https://github.com/mylinuxforwork/dotfiles) was helpful when I was configuring Hyprland
+
 I stole and edited some configs from [Eric Murphy's dotfiles](https://github.com/ericmurphyxyz/dotfiles)
 
 <h1 align="center">📦 Requirements</h1>
