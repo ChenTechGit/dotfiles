@@ -1,102 +1,88 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
-    "margin": 6,
-    // Choose the order of the modules
-    "modules-left": [
-        "clock"
-    ],
-    "modules-center": [
-        "hyprland/workspaces"
-    ],
-    "modules-right": [
-        "power-profiles-daemon",
-        "backlight",
-        "battery",
-        "battery#bat2",
-        "pulseaudio",
-        "cpu",
-        "memory",
-        "tray"
-    ],
-    // Modules configuration
-    "hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "warp-on-scroll": false,
-        "format": "{icon}",
-        "format-icons": {
-            "1": "",   // Terminal
-            "2": "",   // Messaging platform
-            "3": "",   // Web browser
-            "4": "",   // Media (PDFs, videos, pictures, etc)
-            "5": "",   // Photo editing (GIMP)
-            "6": "󰑋",   // Video recorder (OBS)
-            "7": "󰊴"   // Gaming
-        }
-    },
-    "tray": {
-        "icon-size": 20,
-        "spacing": 10
-    },
-    "pulseaudio": {
-      "format": "  {volume}%"
-    },
-    "clock": {
-        // "timezone": "America/New_York",
-        "format": " {:%m/%d %a   %I:%M %p}",
-        // "tooltip-format": "{:%Y-%m-%d | %H:%M}"
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-        // "format-alt": "{:%Y-%m-%d}"
-    },
-    "hyprland/window": {
-      "icon": true,
-      "max-length": 44,
-      "icon-size": 23
-    },
-    "memory": {
-      "format": "   {percentage}%",
-      "interval": 10
-    },
-    "cpu": {
-      "format": "  {usage}%"
-    },
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
-    },
-    "battery": {
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
-    },
-    "battery#bat2": {
-        "bat": "BAT2"
-    },
-    "power-profiles-daemon": {
-      "format": "{icon}",
-      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-      "tooltip": true,
-      "format-icons": {
-        "default": "",
-        "performance": "",
-        "balanced": "",
-        "power-saver": ""
-      }
+  // "layer": "top", // Waybar at top layer
+  // "position": "bottom", // Waybar position (top|bottom|left|right)
+  "height": 30, // Waybar height (to be removed for auto height)
+  // "width": 1280, // Waybar width
+  "spacing": 4, // Gaps between modules (4px)
+  "margin": 6,
+  // Choose the order of the modules
+  "modules-left": [
+      "clock"
+  ],
+  "modules-center": [
+      "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "battery",
+    "pulseaudio",
+    "cpu",
+    "memory",
+    "tray"
+  ],
+  // Modules configuration
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "",   // Terminal
+      "2": "",   // Messaging platform
+      "3": "",   // Web browser
+      "4": "",   // Media (PDFs, videos, pictures, etc)
+      "5": "",   // Photo editing (GIMP)
+      "6": "󰑋",   // Video recorder (OBS)
+      "7": "󰊴"    // Gaming
     }
+  },
+  "battery": {
+    "full-at": 100
+  },
+  "tray": {
+    "icon-size": 20,
+    "spacing": 10
+  },
+  "pulseaudio": {
+    "format": "  {volume}%"
+  },
+  "clock": {
+    // "timezone": "America/New_York",
+    "format": " {:%m/%d %a   %I:%M %p}",
+    // "tooltip-format": "{:%Y-%m-%d | %H:%M}"
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    // "format-alt": "{:%Y-%m-%d}"
+  },
+  "hyprland/window": {
+    "icon": true,
+    "max-length": 44,
+    "icon-size": 23
+  },
+  "memory": {
+    "format": "   {percentage}%",
+    "interval": 10
+  },
+  "cpu": {
+    "format": "  {usage}%"
+  },
+  "backlight": {
+    // "device": "acpi_video1",
+    "format": "{percent}% {icon}",
+    "format-icons": ["", "", "", "", "", "", "", "", ""]
+  },
+  "battery": {
+    "states": {
+      // "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-full": "{capacity}% {icon}",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{time} {icon}",
+    // "format-good": "", // An empty format will hide the module
+    // "format-full": "",
+    "format-icons": ["", "", "", "", ""]
+  }
 }
