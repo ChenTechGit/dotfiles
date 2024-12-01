@@ -7,7 +7,7 @@
 
 {
     "label" : "hibernate",
-    "action" : "systemctl hibernate",
+    "action" : "~/.local/bin/lamp; hyprlock & sleep 1; systemctl hibernate",
     "text" : "Hibernate",
     "keybind" : "h"
 }
@@ -28,7 +28,7 @@
 
 {
     "label" : "suspend",
-    "action" : "hyprlock & sleep 1; systemctl suspend",
+    "action" : "~/.local/bin/lamp; hyprlock & sleep 1; systemctl suspend",
     "text" : "Suspend",
     "keybind" : "u"
 }
