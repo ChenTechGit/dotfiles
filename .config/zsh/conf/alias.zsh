@@ -16,6 +16,7 @@ alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
 alias nvm="nvim"
+alias vs="nvim src/main.rs" # Edit Cargo source code file
 # Git
 alias gs="git status"
 alias ga="git add"
