@@ -136,5 +136,8 @@ config.set('colors.webpage.preferred_color_scheme', 'dark')
 # Colors (Tokyonight Dark)
 config.set('colors.webpage.bg', '#1a1b26')
 
+# Font
+c.fonts.default_family = 'MesloLGS Nerd Font Mono'
+
 # Smooth scroll
 config.set('scrolling.smooth', True)
