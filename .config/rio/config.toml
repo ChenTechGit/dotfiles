@@ -188,6 +188,7 @@ opacity = 0.8
 # You can also set family on root to overwrite all fonts.
 [fonts]
 family = "MesloLGS Nerd Font Propo"
+extras = [{ family = "Noto Sans CJK JP"}]
 size = 15
 
 #
