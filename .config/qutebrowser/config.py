@@ -135,6 +135,8 @@ config.set('colors.webpage.preferred_color_scheme', 'dark')
 
 # Colors (Tokyonight Dark)
 config.set('colors.webpage.bg', '#1a1b26')
+c.colors.statusbar.normal.bg = '#22232E'
+c.colors.statusbar.command.bg = '#22232E'
 
 # Font
 c.fonts.default_family = 'Noto Sans CJK Regular'
