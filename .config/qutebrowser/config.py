@@ -137,7 +137,8 @@ config.set('colors.webpage.preferred_color_scheme', 'dark')
 config.set('colors.webpage.bg', '#1a1b26')
 
 # Font
-c.fonts.default_family = 'MesloLGS Nerd Font Mono'
+c.fonts.default_family = 'Noto Sans CJK'
+c.fonts.default_size = '10.5pt'
 
 # Smooth scroll
 config.set('scrolling.smooth', True)
