@@ -130,13 +130,7 @@ config.set('content.local_content_can_access_remote_urls', True, 'file:///home/c
 # Type: Bool
 config.set('content.local_content_can_access_file_urls', False, 'file:///home/chen/.local/share/qutebrowser/userscripts/*')
 
-# Dark mode
-config.set('colors.webpage.preferred_color_scheme', 'dark')
-
-# Colors (Tokyonight Dark)
-config.set('colors.webpage.bg', '#1a1b26')
-c.colors.statusbar.normal.bg = '#22232E'
-c.colors.statusbar.command.bg = '#22232E'
+config.source('colors.py')
 
 # Font
 c.fonts.default_family = 'Noto Sans CJK Regular'
@@ -148,3 +142,5 @@ config.set('scrolling.smooth', True)
 # Hint
 config.bind(',hh', 'hint')
 config.bind(',hl', 'hint links')
+
+config.source('colors.py')
