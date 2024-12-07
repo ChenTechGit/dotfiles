@@ -146,5 +146,5 @@ c.fonts.default_size = '10.8pt'
 config.set('scrolling.smooth', True)
 
 # Hint
-config.bind(',he', 'hint')
+config.bind(',hh', 'hint')
 config.bind(',hl', 'hint links')
