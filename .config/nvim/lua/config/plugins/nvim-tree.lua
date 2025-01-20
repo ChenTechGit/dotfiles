@@ -1,27 +1,28 @@
 return {
   "nvim-tree/nvim-tree.lua",
   dependencies = "nvim-tree/nvim-web-devicons",
+  -- Comment out so that NvimTree opens when you run `nvim DIR`
   -- 󰑓 Load the plugin when one of these keymaps are used
-  keys = {
-    "<leader>ee",
-    "<leader>ef",
-    "<leader>ec",
-    "<leader>er"
-  },
-  -- 󰑓 Load the plugin when one of these commands are used
-  cmd = {
-    "NvimTreeClipboard",
-    "NvimTreeClose",
-    "NvimTreeCollapse",
-    "NvimTreeCollapseKeepBuffers",
-    "NvimTreeFindFile",
-    "NvimTreeFocus",
-    "NvimTreeHiTest",
-    "NvimTreeOpen",
-    "NvimTreeRefresh",
-    "NvimTreeResize",
-    "NvimTreeToggle"
-  },
+  -- keys = {
+  --   "<leader>ee",
+  --   "<leader>ef",
+  --   "<leader>ec",
+  --   "<leader>er"
+  -- },
+  -- -- 󰑓 Load the plugin when one of these commands are used
+  -- cmd = {
+  --   "NvimTreeClipboard",
+  --   "NvimTreeClose",
+  --   "NvimTreeCollapse",
+  --   "NvimTreeCollapseKeepBuffers",
+  --   "NvimTreeFindFile",
+  --   "NvimTreeFocus",
+  --   "NvimTreeHiTest",
+  --   "NvimTreeOpen",
+  --   "NvimTreeRefresh",
+  --   "NvimTreeResize",
+  --   "NvimTreeToggle"
+  -- },
   opts = function()
     local nvimtree = require("nvim-tree")
 
