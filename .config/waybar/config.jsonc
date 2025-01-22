@@ -8,7 +8,8 @@
   "margin": 6,
   // Choose the order of the modules
   "modules-left": [
-      "clock"
+      "clock",
+      "hyprland/window"
   ],
   "modules-center": [
       "hyprland/workspaces"
@@ -56,7 +57,7 @@
   "hyprland/window": {
     "icon": true,
     "max-length": 44,
-    "icon-size": 23
+    "icon-size": 20
   },
   "memory": {
     "format": "   {percentage}%",
