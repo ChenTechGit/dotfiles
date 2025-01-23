@@ -4,8 +4,8 @@ local opt = vim.opt -- For conciseness
 opt.number = true
 
 -- 󱁐 Tabs & indentation --
-opt.tabstop =  2          -- Use 2 spaces for tabs (Prettier default)
-opt.shiftwidth = 2        -- Use 2 spaces for indent width
+opt.tabstop =  4          -- Use 4 spaces for tabs (Prettier default)
+opt.shiftwidth = 4        -- Use 4 spaces for indent width
 opt.expandtab = true      -- Expand tab to spaces
 opt.autoindent = true     -- Copy indent from current line when starting new one
 
