@@ -1,0 +1,20 @@
+# --------------------------- #
+#  Theme                     #
+# --------------------------- #
+
+theme = tokyonight
+background-opacity = 0.8
+
+# --------------------------- #
+#  Font                      #
+# --------------------------- #
+
+font-family = MesloLGS Nerd Font Propo
+
+# --------------------------- #
+#  Disable unwanted features #
+# --------------------------- #
+
+resize-overlay = never
+window-decoration = false
+gtk-adwaita = false
