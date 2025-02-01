@@ -29,13 +29,13 @@
 {
   "label" : "suspend",
   "action" : "~/.local/bin/lamp off; hyprlock & sleep 1; systemctl suspend",
-  "text" : "Suspend",
-  "keybind" : "u (u)"
+  "text" : "Suspend (u)",
+  "keybind" : "u"
 }
 
 {
   "label" : "reboot",
   "action" : "systemctl reboot",
-  "text" : "Reboot",
-  "keybind" : "r (r)"
+  "text" : "Reboot (r)",
+  "keybind" : "r"
 }
