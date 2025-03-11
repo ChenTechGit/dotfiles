@@ -18,3 +18,5 @@ font-family = MesloLGS Nerd Font Propo
 resize-overlay = never
 window-decoration = false
 gtk-adwaita = false
+
+confirm-close-surface = false
