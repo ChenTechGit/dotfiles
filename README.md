@@ -3,7 +3,7 @@
 > [!WARNING]  
 > ALL, of these dotfiles are **UNMAINTAINED**
 
-This branch contains ALL, of my dotfiles.
+This branch contains all my unused dotfiles.
 Including these:
 1. Awesome WM
 2. Alacritty
