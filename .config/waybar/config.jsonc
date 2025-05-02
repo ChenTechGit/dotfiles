@@ -45,14 +45,11 @@
     "spacing": 10
   },
   "pulseaudio": {
-    "format": "  {volume}%"
+    "format": "{volume}%"
   },
   "clock": {
-    // "timezone": "America/New_York",
-    "format": " {:%m/%d %a   %I:%M %p}",
-    // "tooltip-format": "{:%Y-%m-%d | %H:%M}"
+    "format": "{:%m/%d %a %I:%M %p}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-    // "format-alt": "{:%Y-%m-%d}"
   },
   "hyprland/window": {
     "icon": true,
@@ -60,11 +57,11 @@
     "icon-size": 20
   },
   "memory": {
-    "format": "   {percentage}%",
+    "format": "{percentage}%",
     "interval": 10
   },
   "cpu": {
-    "format": "  {usage}%"
+    "format": "{usage}%"
   },
   "backlight": {
     // "device": "acpi_video1",

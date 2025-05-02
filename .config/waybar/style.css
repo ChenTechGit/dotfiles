@@ -3,7 +3,7 @@
 
 /*Waybar*/
 #waybar {
-  font-family: FontAwesome;
+  font-family: MesloLGS Nerd Font Propo;
   font-size: 14.3px;
   border-radius: 20px;
   background-color: transparent;
@@ -11,14 +11,14 @@
 
 /*Set default colors and stuff for modules*/
 .module {
-  background-color: #1E1E2E;
+  background-color: #1A1B26;
   border-radius: 20px;
 }
 
 .modules-right {
-  background-color: #1E1E2E;
+  background-color: #1A1B26;
   border-radius: 20px;
-  padding: 0 8px;
+  padding: 0 10px;
 }
 
 /*Clock*/
@@ -31,6 +31,7 @@
 /*Workspaces*/
 #workspaces {
   border-radius: 20px;
+  padding: 0 5px;
 }
 
 #workspaces button {
@@ -49,6 +50,7 @@
 #window {
   border-radius: 20px;
   padding: 0 12px;
+  margin-left: 5px;
 }
 
 /*System tray*/
@@ -59,12 +61,12 @@
 /*CPU*/
 #cpu {
   padding: 0 5px;
-  color: #9ece6a;
+  color: #9ECE6a;
 }
 
 /*Memory*/
 #memory {
-  color: #9ece6a;
+  color: #9ECE6a;
 }
 
 /*Pulseaudio*/
