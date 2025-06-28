@@ -2,7 +2,7 @@
 #  Theme                     #
 # --------------------------- #
 
-theme = tokyonight
+theme = catppuccin-macchiato
 background-opacity = 0.8
 
 # --------------------------- #
