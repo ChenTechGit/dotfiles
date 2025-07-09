@@ -46,4 +46,4 @@ stow .
 ```
 
 ## Old configs?
-You may find my old configs in the [unused](https://github.com/ChenTechGit/dotfiles/tree/unused).
+You may find my old configs in the [unused](https://github.com/ChenTechGit/dotfiles/tree/unused) branch.
