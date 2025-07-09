@@ -4,7 +4,7 @@ I use Arch btw.
 ### Credits
 #### Fastfetch
 1. Compact config based on: https://github.com/fastfetch-cli/fastfetch/blob/dev/presets/examples/13.jsonc (main)
-2. Big config based on: https://github.com/Sk7Str1pe/Public
+2. Large config based on: https://github.com/Sk7Str1pe/Public
 #### Neovim
 I learnned to configure Neovim from these videos from [Josean Martinez](https://www.youtube.com/@joseanmartinez)
 #### Other
