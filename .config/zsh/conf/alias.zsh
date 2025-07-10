@@ -2,21 +2,34 @@
 ###  ALIASES ###
 #################
 
-# Aliases
-alias rloadrc="source ~/.zshrc"
-alias crloadrc="clear; source ~/.zshrc"
 # Ls
 alias eza="eza --color=always --git --icons=always"
 alias ls="eza"
 alias ll="eza -lh"
 alias lla="eza -lha"
 alias tree="eza --tree"
+
+# Paru
+alias i="paru -S"
+alias s="paru -Ss"
+alias q="paru -Q"
+alias qi="paru -Qi"
+alias rns="paru -Rns"
+alias u="paru -Syu"
+
+# Flatpak
+alias fp="flatpak"
+alias fpi="flatpak install"
+alias fpu="flatpak update"
+alias fpr="flatpak uninstall"
+alias fpre="flatpak repair"
+
 # Neovim
 alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
 alias nvm="nvim"
-alias vs="nvim src/main.rs" # Edit Cargo source code file
+
 # Git
 alias gs="git status"
 alias ga="git add"
@@ -32,14 +45,15 @@ alias gm="git merge"
 alias gr="git restore"
 alias gp="git push"
 alias gpa="git push --all"
-# Other
-alias unimatrix="unimatrix -s 95"
 
-## COLORIZE OUTPUTS ##
+# Colorize outputs
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias fgrep"fgrep --color=auto"
 alias lcat="lolcat"
+
 # Custom
 alias type="source ~/.local/bin/type"
 alias pwd="~/.local/bin/pwd"
+
+alias unimatrix="unimatrix -s 95"
