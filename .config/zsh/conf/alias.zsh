@@ -2,35 +2,35 @@
 ###  ALIASES ###
 #################
 
-# Ls
+# LS
 alias eza="eza --color=always --git --icons=always"
 alias ls="eza"
 alias ll="eza -lh"
 alias lla="eza -lha"
 alias tree="eza --tree"
 
-# Paru
+# PARU
 alias i="paru -S"
+alias r="paru -Rns"
 alias s="paru -Ss"
+alias u="paru -Syu"
 alias q="paru -Q"
 alias qi="paru -Qi"
-alias rns="paru -Rns"
-alias u="paru -Syu"
 
-# Flatpak
+# FLATPAK
 alias fp="flatpak"
 alias fpi="flatpak install"
 alias fpu="flatpak update"
 alias fpr="flatpak uninstall"
 alias fpre="flatpak repair"
 
-# Neovim
+# NEOVIM
 alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
 alias nvm="nvim"
 
-# Git
+# GIT
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
@@ -46,14 +46,16 @@ alias gr="git restore"
 alias gp="git push"
 alias gpa="git push --all"
 
-# Colorize outputs
+# COLORIZE OUTPUTS
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias fgrep"fgrep --color=auto"
 alias lcat="lolcat"
 
-# Custom
+# CUSTOM
 alias type="source ~/.local/bin/type"
 alias pwd="~/.local/bin/pwd"
 
+# UNIMATRIX (A better Cmatrix)
+alias um="unimatrix -s 95"
 alias unimatrix="unimatrix -s 95"
