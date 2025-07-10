@@ -3,7 +3,8 @@
 
 /*Waybar*/
 #waybar {
-  font-family: MesloLGS Nerd Font Propo;
+  /* font-family: MesloLGS Nerd Font Propo; */
+  font-family: JetBrainsMono Nerd Font Propo;
   font-size: 14.3px;
   border-radius: 20px;
   background-color: transparent;

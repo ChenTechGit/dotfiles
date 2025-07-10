@@ -28,11 +28,11 @@
     "warp-on-scroll": false,
     "format": "{icon}",
     "format-icons": {
-      "1": "",   // Terminal
-      "2": "",   // Messaging platform
-      "3": "",   // Web browser
-      "4": "",   // Media (PDFs, videos, pictures, etc)
-      "5": "",   // Photo editing (GIMP)
+      "1": "",   // Terminal (Ghostty)
+      "2": "",   // Messaging platform (Discord)
+      "3": "",   // Web browser (Zen)
+      "4": "",   // Office (LibreOffice)
+      "5": "",   // Photo editing (GIMP & Inkscape)
       "6": "󰑋",   // Video recorder (OBS)
       "7": "󰊴"    // Gaming
     }
@@ -45,10 +45,10 @@
     "spacing": 10
   },
   "pulseaudio": {
-    "format": "{volume}%"
+    "format": " {volume}%"
   },
   "clock": {
-    "format": "{:%m/%d %a %I:%M %p}",
+    "format": " {:%m/%d %a  %I:%M %p}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "hyprland/window": {
@@ -57,30 +57,30 @@
     "icon-size": 20
   },
   "memory": {
-    "format": "{percentage}%",
+    "format": " {percentage}%",
     "interval": 10
   },
   "cpu": {
-    "format": "{usage}%"
-  },
-  "backlight": {
-    // "device": "acpi_video1",
-    "format": "{percent}% {icon}",
-    "format-icons": ["", "", "", "", "", "", "", "", ""]
-  },
-  "battery": {
-    "states": {
-      // "good": 95,
-      "warning": 30,
-      "critical": 15
-    },
-    "format": "{capacity}% {icon}",
-    "format-full": "{capacity}% {icon}",
-    "format-charging": "{capacity}% ",
-    "format-plugged": "{capacity}% ",
-    "format-alt": "{time} {icon}",
-    // "format-good": "", // An empty format will hide the module
-    // "format-full": "",
-    "format-icons": ["", "", "", "", ""]
+    "format": " {usage}%"
   }
+  // "backlight": {
+  //   // "device": "acpi_video1",
+  //   "format": "{percent}% {icon}",
+  //   "format-icons": ["", "", "", "", "", "", "", "", ""]
+  // },
+  // "battery": {
+  //   "states": {
+  //     // "good": 95,
+  //     "warning": 30,
+  //     "critical": 15
+  //   },
+  //   "format": "{capacity}% {icon}",
+  //   "format-full": "{capacity}% {icon}",
+  //   "format-charging": "{capacity}% ",
+  //   "format-plugged": "{capacity}% ",
+  //   "format-alt": "{time} {icon}",
+  //   // "format-good": "", // An empty format will hide the module
+  //   // "format-full": "",
+  //   "format-icons": ["", "", "", "", ""]
+  // }
 }
