@@ -2,7 +2,7 @@
 #  Theme                     #
 # --------------------------- #
 
-theme = catppuccin-macchiato
+theme = catppuccin-mocha
 background-opacity = 0.8
 
 # --------------------------- #
