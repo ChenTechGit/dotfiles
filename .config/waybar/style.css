@@ -1,5 +1,13 @@
-/*This config uses both Tokyonight and Catppuccin colors*/
-/*Theme is called Tokyocat*/
+/*
+ * __        __          _                  ____  _         _
+ * \ \      / /_ _ _   _| |__   __ _ _ __  / ___|| |_ _   _| | ___
+ *  \ \ /\ / / _` | | | | '_ \ / _` | '__| \___ \| __| | | | |/ _ \
+ *   \ V  V / (_| | |_| | |_) | (_| | |     ___) | |_| |_| | |  __/
+ *    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    |____/ \__|\__, |_|\___|
+ *                 |___/                              |___/
+ *
+ * -----------------------------------------------------
+*/
 
 /*Waybar*/
 #waybar {
@@ -12,20 +20,19 @@
 
 /*Set default colors and stuff for modules*/
 .module {
-  background-color: #1A1B26;
+  background-color: #1e1e2e;
   border-radius: 20px;
 }
 
 .modules-right {
-  background-color: #1A1B26;
+  background-color: #1e1e2e;
   border-radius: 20px;
   padding: 0 10px;
 }
 
 /*Clock*/
 #clock {
-  color: #e0af68;
-  color: #F9E2AF;
+  color: #f9e2af;
   padding: 0 11px;
 }
 
@@ -40,11 +47,11 @@
 }
 
 #workspaces button.active {
-  color: #89B4FA;
+  color: #89b4fa;
 }
 
 #workspaces button.urgent {
-  color: #f7768e;  /*Color from Tokyonight-Dark*/
+  color: #f38ba8;
 }
 
 /*Window*/
@@ -62,16 +69,15 @@
 /*CPU*/
 #cpu {
   padding: 0 5px;
-  color: #9ECE6a;
+  color: #a6e3a1;
 }
 
 /*Memory*/
 #memory {
-  color: #9ECE6a;
+  color: #a6e3a1;
 }
 
 /*Pulseaudio*/
 #pulseaudio {
-  /* color: #7aa2f7; */
-  color: #89B4FA;
+  color: #89b4fa;
 }
