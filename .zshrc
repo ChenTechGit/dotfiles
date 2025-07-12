@@ -29,12 +29,6 @@ source ~/.config/zsh/conf/path.zsh
 
 source ~/.config/zsh/conf/alias.zsh
 
-##############
-###  EVAL ###
-##############
-
-source ~/.config/zsh/conf/eval.zsh
-
 ###################
 ### 󰊕 FUNCTIONS ###
 ###################
