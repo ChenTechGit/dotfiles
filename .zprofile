@@ -9,3 +9,9 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 export QT_IM_MODULE='fcitx'
 export SDL_IM_MODULE='fcitx'
 export XMODIFIERS="@im=fcitx"
+
+### DESKTOP (Hyprland UWSM) ###
+# NOTE: Only starts on TTY1
+if [[ "$(tty)" == "/dev/tty1" ]] && uwsm check may-start; then
+    exec uwsm start hyprland-uwsm.desktop
+fi
