@@ -15,6 +15,7 @@ return {
     noice.setup() --  Configure Noice
 
     notify.setup({
+      background_colour="#000000",
       on_open = function()
         vim.cmd([[ :nohlsearch ]])
       end,

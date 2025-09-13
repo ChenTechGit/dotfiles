@@ -13,6 +13,6 @@ export XMODIFIERS="@im=fcitx"
 ### DESKTOP (Hyprland UWSM) ###
 # NOTE: Only starts on TTY1
 if [[ "$(tty)" == "/dev/tty1" ]] && uwsm check may-start; then
-    echo "Login succesful, starting Hyprland."
+    echo "\033[1;32mLogin succesful, starting Hyprland.\033[0m"
     exec uwsm start hyprland-uwsm.desktop
 fi
