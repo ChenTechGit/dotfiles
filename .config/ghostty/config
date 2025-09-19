@@ -20,3 +20,5 @@ window-decoration = false
 # gtk-adwaita = false
 
 confirm-close-surface = false
+
+quit-after-last-window-closed = false
