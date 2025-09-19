@@ -2,7 +2,7 @@
 #  Theme                     #
 # --------------------------- #
 
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 background-opacity = 0.8
 
 # --------------------------- #
@@ -17,6 +17,6 @@ font-family = JetBrainsMono Nerd Font
 
 resize-overlay = never
 window-decoration = false
-gtk-adwaita = false
+# gtk-adwaita = false
 
 confirm-close-surface = false
