@@ -55,6 +55,7 @@ alias lcat="lolcat"
 # CUSTOM
 alias type="source ~/.local/bin/type"
 alias pwd="~/.local/bin/pwd"
+alias mntnfs="sudo mount -t nfs 192.168.8.133:/export/chen-backup /mnt/chen-nfs"
 
 # UNIMATRIX (A better Cmatrix)
 alias um="unimatrix -s 95"
