@@ -14,7 +14,7 @@
 
 {
   "label" : "logout",
-  "action" : "killall -9 Hyprland",
+  "action" : "uwsm stop",
   "text" : "Logout (e)",
   "keybind" : "e"
 }
