@@ -57,6 +57,13 @@ alias type="source ~/.local/bin/type"
 alias pwd="~/.local/bin/pwd"
 alias mntnfs="sudo mount -t nfs 192.168.8.133:/export/chen-backup /mnt/chen-nfs"
 
-# UNIMATRIX (A better Cmatrix)
+# UNIMATRIX (A better CMatrix)
 alias um="unimatrix -s 95"
 alias unimatrix="unimatrix -s 95"
+
+# OH MY POSH (OMP)
+alias omp="oh-my-posh"
+
+# RELOAD CONFIGS
+alias lrc="source ~/.zshrc"
+alias la="source ~/.config/zsh/conf/alias.zsh"
