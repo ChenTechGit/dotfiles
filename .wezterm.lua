@@ -9,7 +9,7 @@ local config = {}
 config.enable_wayland = false -- Wezterm won't show a window if set to true on Wayland
 
 -- Font
-config.font = wezterm.font("MesloLGS Nerd Font Propo", { weight = "Medium" })
+config.font = wezterm.font("JetBrainsMono Nerd Font Mono", { weight = "Medium" })
 config.font_size = 11
 
 -- Disable tab bar
@@ -28,7 +28,7 @@ config.colors = {
 }
 
 -- Opacity
-config.window_background_opacity = 0.8
+-- config.window_background_opacity = 0.5
 
 -- Return config
 return config
