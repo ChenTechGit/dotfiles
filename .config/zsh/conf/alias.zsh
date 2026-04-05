@@ -66,6 +66,9 @@ alias unimatrix="unimatrix -s 95"
 # OH MY POSH (OMP)
 alias omp="oh-my-posh"
 
+# FEH
+alias feh="feh --scale-down"
+
 # RELOAD CONFIGS
 alias lrc="source ~/.zshrc"
 alias la="source ~/.config/zsh/conf/alias.zsh"
