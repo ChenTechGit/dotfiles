@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Get a list of running processes: PID and name
+# Format: PID: process_name
+process=$(ps -e -o pid= -o comm= | awk '{pid=$1; $1=""; sub(/^ +/, ""); print pid ": " $0}' | rofi -dmenu -p "Kill process:")
+
+# If user selected something
+if [[ -n "$process" ]]; then
+    # Extract the PID (everything before the colon)
+    pid="${process%%:*}"
+    # Kill the process
+    echo $pid
+    kill "$pid"
+fi
