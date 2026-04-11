@@ -26,3 +26,8 @@ function __priv-escal-tool-command() {
 }
 zle -N __priv-escal-tool-command
 bindkey '\e\e' __priv-escal-tool-command
+
+## Type ##
+pwd() {
+  printf '\033[1m\033[34m󰉋 %s\033[0m\n' "$PWD"
+}
