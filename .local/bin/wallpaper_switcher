@@ -1,0 +1,3 @@
+#!/bin/sh
+wallpaper=$(ls ~/wallpapers | fuzzel -d -p "Select wallpaper: ")
+awww img --transition-type=center "$HOME/wallpapers/$wallpaper"
