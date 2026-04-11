@@ -2,7 +2,7 @@
 
 # Get a list of running processes: PID and name
 # Format: PID: process_name
-process=$(ps -e -o pid= -o comm= | awk '{pid=$1; $1=""; sub(/^ +/, ""); print pid ": " $0}' | rofi -dmenu -p "Kill process:")
+process=$(ps -e -o pid= -o comm= | awk '{pid=$1; $1=""; sub(/^ +/, ""); print pid ": " $0}' | fuzzel -d --placeholder="Search processes" -p "Kill process: ")
 
 # If user selected something
 if [[ -n "$process" ]]; then
