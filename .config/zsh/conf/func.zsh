@@ -29,5 +29,5 @@ bindkey '\e\e' __priv-escal-tool-command
 
 ## Type ##
 pwd() {
-  printf '\033[1m\033[34m󰉋 %s\033[0m\n' "$PWD"
+    printf '\033[1m\033[34m󰉋 %s\033[0m\n' "$(/usr/bin/pwd -L $@)"
 }
