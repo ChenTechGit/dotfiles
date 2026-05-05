@@ -10,3 +10,4 @@
 .config/nvim/lazy-lock.json
 .local/bin/appman
 .local/bin/zen-browser
+.local/bin/elyprismlauncher
