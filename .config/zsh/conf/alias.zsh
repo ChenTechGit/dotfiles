@@ -67,6 +67,14 @@ alias omp="oh-my-posh"
 # FEH
 alias feh="feh --scale-down"
 
+# PYTHON
+alias py="python"
+alias pe="pyenv"
+
+# WL-CLIPBOARD
+alias wcp="wl-copy"
+alias wp="wl-paste"
+
 # RELOAD CONFIGS
 alias lrc="source ~/.zshrc"
 alias la="source ~/.config/zsh/conf/alias.zsh"
