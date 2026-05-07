@@ -75,6 +75,11 @@ alias pe="pyenv"
 alias wcp="wl-copy"
 alias wp="wl-paste"
 
+# AI CONTAINER
+alias opencode="podman exec -it ai-dev /usr/local/bin/opencode"
+alias codex="podman exec -it ai-dev /usr/local/bin/codex"
+alias gemini="podman exec -it ai-dev /usr/local/bin/gemini"
+
 # RELOAD CONFIGS
 alias lrc="source ~/.zshrc"
 alias la="source ~/.config/zsh/conf/alias.zsh"
