@@ -1,2 +1,2 @@
-export XCURSOR_THEME=Bibata-Modern-Classic
-export XCURSOR_SIZE=24
+export HYPRCURSOR_THEME = Bibata-Modern-Classic-Hyprcursor
+export HYPRCURSOR_SIZE  = 24
