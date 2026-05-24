@@ -13,3 +13,4 @@
 .local/bin/elyprismlauncher
 .local/bin/eden-nightly
 .local/bin/citron-appimage
+.local/bin/edex-ui
