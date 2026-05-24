@@ -1,0 +1,49 @@
+#!/bin/bash
+# DESKTOP ENTRY SEARCH (DES)
+
+mode="file"
+
+while getopts ":nf" opt; do
+    case "$opt" in
+        n) mode="name" ;;
+        f) mode="file" ;;
+        \?)
+            echo "des: invalid option -- '$OPTARG'" >&2
+            echo "usage: des [-n | -f]" >&2
+            exit 1
+            ;;
+    esac
+done
+
+shift $((OPTIND - 1))
+
+# reject positional arguments like: des n
+if [ $# -gt 0 ]; then
+    echo "des: unexpected argument '$1'" >&2
+    echo "usage: des [-n | -f]" >&2
+    exit 1
+fi
+
+if [ "$mode" = "name" ]; then
+    find /usr/share/applications ~/.local/share/applications \
+        -maxdepth 1 -type f -name '*.desktop' \
+    | while read -r file; do
+        name=$(grep -m1 '^Name=' "$file" | cut -d= -f2-)
+        printf '%s\t%s\n' "$name" "$file"
+    done \
+    | fzf --multi \
+        --with-nth=1 \
+        --delimiter=$'\t' \
+        --preview='bat --color=always --style=plain {2}' \
+    | cut -f2 \
+    | xargs -r nvim
+
+else
+    find /usr/share/applications ~/.local/share/applications \
+        -maxdepth 1 -type f \
+    | fzf --multi \
+        --delimiter=/ \
+        --with-nth=-1 \
+        --preview='bat --color=always --style=plain {}' \
+    | xargs -r nvim
+fi
