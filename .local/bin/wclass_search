@@ -1,0 +1,15 @@
+#!/bin/bash
+hyprctl clients -j \
+| jq -r '.[] | "\(.class)\t\(.address)\t\(.title)\t\(.workspace.name)\t\(.floating)"' \
+| fzf --multi \
+    --with-nth=1 \
+    --preview-window=right:85% \
+    --layout=reverse \
+    --delimiter=$'\t' \
+    --preview='
+        addr=$(echo {} | cut -f2)
+        hyprctl clients -j \
+        | jq ".[] | select(.address==\"$addr\")" \
+        | bat --language=json -p --color=always
+    ' \
+| cut -f2
