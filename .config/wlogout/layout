@@ -14,14 +14,14 @@
 
 {
   "label" : "logout",
-  "action" : "uwsm stop",
+  "action" : "hyprshutdown -t 'Shutting down Hyprland...' -p 'uwsm stop'",
   "text" : "Logout (e)",
   "keybind" : "e"
 }
 
 {
   "label" : "shutdown",
-  "action" : "systemctl poweroff",
+  "action" : "hyprshutdown -t 'Shutting down...' -p 'systemctl poweroff'",
   "text" : "Shutdown (s)",
   "keybind" : "s"
 }
@@ -35,7 +35,7 @@
 
 {
   "label" : "reboot",
-  "action" : "systemctl reboot",
+  "action" : "hyprshutdown -t 'Rebooting...' -p 'systemctl reboot'",
   "text" : "Reboot (r)",
   "keybind" : "r"
 }
