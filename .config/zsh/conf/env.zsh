@@ -10,4 +10,4 @@ export MANPAGER="nvim +Man!"                                 # Use Neovim as man
 export HISTFILE="$HOME/.zsh_history"                         # Store history in $HOME/.zsh_history
 export HISTSIZE=10000                                        # Use a history size of 1000
 export SAVEHIST=10000                                        # Use a history size of 1000
-export BAT_THEME=tokyonight_night                            # Use tokyonight_night theme in Bat (Better Cat)
+export BAT_THEME="Catppuccin Mocha"                          # Use Catppuccin Mocha theme in Bat (Better Cat)
