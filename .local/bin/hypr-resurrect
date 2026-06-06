@@ -1,4 +1,38 @@
 #!/bin/bash
-lockscreen=hyprlock
+
+lockscreen="hyprlock"
+
+usage() {
+    echo "Usage: $(basename "$0") [-h] [-l lockscreen]"
+    echo ""
+    echo "Options:"
+    echo "  -h            Show help"
+    echo "  -l <command>  Set lockscreen (default: hyprlock)"
+}
+
+while getopts "hl:" opt; do
+    case "$opt" in
+        h)
+            usage
+            exit 0
+            ;;
+        l)
+            lockscreen="$OPTARG"
+            ;;
+        \?)
+            echo "Error: Invalid option: -$OPTARG" >&2
+            usage >&2
+            exit 1
+            ;;
+        :)
+            echo "Error: Option -$OPTARG requires an argument" >&2
+            usage >&2
+            exit 1
+            ;;
+    esac
+done
+
+shift $((OPTIND - 1))
+
 hyprctl --instance 0 "keyword misc:allow_session_lock_restore 1"
 hyprctl --instance 0 "dispatch exec $lockscreen"
