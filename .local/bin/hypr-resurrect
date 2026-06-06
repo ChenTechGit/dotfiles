@@ -39,5 +39,10 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
+figlet -f slant Hypr-Resurrect | lolcat
+echo "Using screen locker: $lockscreen"
+echo "Hyprctl outputs:"
 hyprctl --instance 0 "keyword misc:allow_session_lock_restore 1"
 hyprctl --instance 0 "dispatch exec $lockscreen"
+echo ""
+echo "Resurrected Hyprland"
