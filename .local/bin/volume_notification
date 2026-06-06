@@ -1,10 +1,30 @@
 #!/bin/sh
 
-volume=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print int($2 * 100)}')
+volume_info=$(wpctl get-volume @DEFAULT_AUDIO_SINK@)
 
-notify-send \
-    -t 1000 \
-    -h int:value:"$volume" \
-    -h string:x-canonical-private-synchronous:volume \
-    "Volume" \
-    "${volume}%"
+if echo "$volume_info" | grep -q MUTED; then
+    notify-send \
+        -t 1000 \
+        -h string:x-canonical-private-synchronous:volume \
+        -i audio-volume-muted \
+        "Volume" \
+        "Muted"
+else
+    volume=$(echo "$volume_info" | awk '{print int($2 * 100)}')
+
+    if [ "$volume" -lt 33 ]; then
+        icon="audio-volume-low"
+    elif [ "$volume" -lt 66 ]; then
+        icon="audio-volume-medium"
+    else
+        icon="audio-volume-high"
+    fi
+
+    notify-send \
+        -t 1000 \
+        -h string:x-canonical-private-synchronous:volume \
+        -h int:value:"$volume" \
+        -i "$icon" \
+        "Volume" \
+        "${volume}%"
+fi
