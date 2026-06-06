@@ -21,12 +21,15 @@ opt.background = "dark"   -- Colorschemes that support light and dark will defau
 opt.signcolumn = "yes"    -- Show sign column so that ext doesn't shift
 opt.cursorline = true     -- Cursor line!
 
---   Backspace --
+--  Backspace --
 opt.backspace = "indent,eol,start" -- Allow backspace on indent, end of line or insert mode start position
 
 --  Clipboard --
 opt.clipboard:append("unnamedplus") -- Use system clipboard as default register
 
 -- 󰨑 Split windows --
-opt.splitright = true -- Split vertical window to the right by default
-opt.splitbelow = true -- Split horizontal window to the bottom by default
+opt.splitright = true      -- Split vertical window to the right by default
+opt.splitbelow = true      -- Split horizontal window to the bottom by default
+
+-- Swap files --
+opt.swapfile = false       -- Make Neovim shut up about swap files

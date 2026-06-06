@@ -1,5 +1,5 @@
 -- Set leader key --
-vim.g.mapleader = " "
+vim.g.mapleader = " " -- 󱁐 Space key
 
 -- Set keymaps --
 local keymap = vim.keymap -- For conciseness
@@ -27,3 +27,9 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = " Open current bu
 -- 󰒲 Lazy.nvim --
 keymap.set("n", "<leader>lu", "<cmd>Lazy<CR>", { desc = "󰒲 Open Lazy UI" })                        -- 󰒲 Open Lazy UI
 keymap.set("n", "<leader>lc", "<cmd>Lazy clean<CR>", { desc = " Clean up unused plugins"})        --  Clean up unused plugins
+
+--  Deleting behavior --
+keymap.set({ "n", "v" }, "d", '"_d')
+keymap.set({ "n", "v" }, "c", '"_c')
+keymap.set({ "n", "v" }, "x", '"_x')
+--  Don't yank/copy text when deleting it ^ --
