@@ -5,6 +5,7 @@
 # LS
 alias eza="eza --color=always --git --icons=always"
 alias ls="eza"
+alias la="eza -a"
 alias ll="eza -lh"
 alias lla="eza -lha"
 alias tree="eza --tree"
@@ -82,4 +83,4 @@ alias gemini="podman exec -it ai-dev /usr/local/bin/gemini"
 
 # RELOAD CONFIGS
 alias lrc="source ~/.zshrc"
-alias la="source ~/.config/zsh/conf/alias.zsh"
+alias lal="source ~/.config/zsh/conf/alias.zsh"
